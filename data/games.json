@@ -1,0 +1,102 @@
+{
+  "season": "2026-27",
+  "throughDate": "2026-10-22",
+  "games": [
+    {
+      "id": "401909088",
+      "date": "2026-10-20",
+      "winner": "Detroit Pistons",
+      "loser": "Boston Celtics"
+    },
+    {
+      "id": "401909089",
+      "date": "2026-10-20",
+      "winner": "Philadelphia 76ers",
+      "loser": "New York Knicks"
+    },
+    {
+      "id": "401909090",
+      "date": "2026-10-20",
+      "winner": "Oklahoma City Thunder",
+      "loser": "San Antonio Spurs"
+    },
+    {
+      "id": "401909091",
+      "date": "2026-10-21",
+      "winner": "Minnesota Timberwolves",
+      "loser": "Miami Heat"
+    },
+    {
+      "id": "401909092",
+      "date": "2026-10-21",
+      "winner": "Los Angeles Lakers",
+      "loser": "Golden State Warriors"
+    },
+    {
+      "id": "401909834",
+      "date": "2026-10-21",
+      "winner": "Atlanta Hawks",
+      "loser": "Orlando Magic"
+    },
+    {
+      "id": "401909835",
+      "date": "2026-10-21",
+      "winner": "Washington Wizards",
+      "loser": "Milwaukee Bucks"
+    },
+    {
+      "id": "401909836",
+      "date": "2026-10-21",
+      "winner": "Charlotte Hornets",
+      "loser": "Brooklyn Nets"
+    },
+    {
+      "id": "401909837",
+      "date": "2026-10-21",
+      "winner": "Toronto Raptors",
+      "loser": "Chicago Bulls"
+    },
+    {
+      "id": "401909838",
+      "date": "2026-10-21",
+      "winner": "Memphis Grizzlies",
+      "loser": "Utah Jazz"
+    },
+    {
+      "id": "401909839",
+      "date": "2026-10-21",
+      "winner": "Indiana Pacers",
+      "loser": "New Orleans Pelicans"
+    },
+    {
+      "id": "401909840",
+      "date": "2026-10-21",
+      "winner": "Houston Rockets",
+      "loser": "Dallas Mavericks"
+    },
+    {
+      "id": "401909841",
+      "date": "2026-10-21",
+      "winner": "Portland Trail Blazers",
+      "loser": "Phoenix Suns"
+    },
+    {
+      "id": "401909842",
+      "date": "2026-10-21",
+      "winner": "LA Clippers",
+      "loser": "Sacramento Kings"
+    },
+    {
+      "id": "401909093",
+      "date": "2026-10-22",
+      "winner": "Philadelphia 76ers",
+      "loser": "Cleveland Cavaliers"
+    },
+    {
+      "id": "401909094",
+      "date": "2026-10-22",
+      "winner": "Oklahoma City Thunder",
+      "loser": "Denver Nuggets"
+    }
+  ]
+}
