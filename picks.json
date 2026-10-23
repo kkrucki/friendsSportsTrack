@@ -1,0 +1,38 @@
+{
+  "KUNKEL": [
+    "Oklahoma City Thunder",
+    "Philadelphia 76ers",
+    "Minnesota Timberwolves",
+    "Atlanta Hawks",
+    "LA Clippers",
+    "Dallas Mavericks",
+    "Chicago Bulls"
+  ],
+  "JIM": [
+    "Houston Rockets",
+    "Los Angeles Lakers",
+    "Indiana Pacers",
+    "Portland Trail Blazers",
+    "Charlotte Hornets",
+    "Cleveland Cavaliers",
+    "Brooklyn Nets"
+  ],
+  "ANDREW": [
+    "Detroit Pistons",
+    "Toronto Raptors",
+    "Memphis Grizzlies",
+    "Boston Celtics",
+    "Miami Heat",
+    "Golden State Warriors",
+    "Utah Jazz"
+  ],
+  "KRUCKI": [
+    "Washington Wizards",
+    "New York Knicks",
+    "San Antonio Spurs",
+    "Orlando Magic",
+    "Phoenix Suns",
+    "Milwaukee Bucks",
+    "Denver Nuggets"
+  ]
+}
