@@ -84,6 +84,9 @@
     .board .pts small { display: block; font-size: 11px; font-weight: 500; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
     .board li.leader .rank { color: var(--accent); }
 
+    .board .vs { display: flex; flex-wrap: wrap; gap: 2px 12px; margin-top: 8px; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .board .vs .rec { font-weight: 600; margin-left: 4px; }
+
     .owners { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
     .owner { padding: 16px; }
     .owner h3 { margin: 0 0 8px; font-size: 17px; display: flex; justify-content: space-between; align-items: baseline; }
@@ -217,6 +220,15 @@
         return { name, teams, wins: sum("wins"), losses: sum("losses"), ties: sum("ties") };
       }).sort((a, b) => b.wins - a.wins || a.losses - b.losses);
 
+      const hasGames = !!games?.games.length;
+      const h2h = hasGames ? headToHead(picks, games) : null;
+      const vsLine = (a) => h2h
+        ? `<div class="vs">${owners.filter((b) => b.name !== a).map((b) => {
+            const r = h2h[a][b.name];
+            return `<span>vs ${esc(b.name)}<span class="rec">${record(r.w, r.l, r.t)}</span></span>`;
+          }).join("")}</div>`
+        : "";
+
       const maxWins = Math.max(1, ...owners.map((o) => o.wins));
       let rank = 0;
       document.getElementById("board").innerHTML = owners.map((o, i) => {
@@ -229,6 +241,7 @@
               <div class="name">${esc(o.name)}${rank === 1 ? " 🔥" : ""}</div>
               <div class="meta">${recText(o.wins, o.losses, o.ties)} · ${pct(o.wins, o.losses, o.ties)}</div>
               <div class="bar"><span style="width:${(o.wins / maxWins) * 100}%"></span></div>
+              ${vsLine(o.name)}
             </div>
             <div class="pts">${o.wins}<small>${o.wins === 1 ? "pt" : "pts"}</small></div>
           </li>`;
@@ -250,8 +263,31 @@
       const when = new Date(standings.updatedAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
       document.getElementById("updated").textContent = `${standings.season ?? ""} season · Updated ${when}`;
 
-      if (games?.games.length) renderHistory(picks, games);
-      else document.getElementById("history").hidden = true;
+      document.getElementById("history").hidden = !hasGames;
+      if (hasGames) renderHistory(picks, games);
+    }
+
+    const ownersByTeam = (picks) => {
+      const ownerOf = {};
+      for (const [owner, teams] of Object.entries(picks)) for (const t of teams) ownerOf[t] = owner;
+      return ownerOf;
+    };
+
+    // Every game between two people's teams counts toward their head-to-head record.
+    // Games where both teams belong to the same person are skipped.
+    // Returns h2h[a][b] = a's record vs. b.
+    function headToHead(picks, games) {
+      const ownerOf = ownersByTeam(picks);
+      const names = Object.keys(picks);
+      const h2h = Object.fromEntries(names.map((a) => [a, Object.fromEntries(names.map((b) => [b, { w: 0, l: 0, t: 0 }]))]));
+      for (const g of games.games) {
+        const [a, b] = g.teams.map((t) => ownerOf[t]);
+        if (!a || !b || a === b) continue;
+        if (g.winner === null) { h2h[a][b].t++; h2h[b][a].t++; }
+        else if (g.winner === g.teams[0]) { h2h[a][b].w++; h2h[b][a].l++; }
+        else { h2h[a][b].l++; h2h[b][a].w++; }
+      }
+      return h2h;
     }
 
     // Line chart of cumulative points (wins) per person, one point per calendar day.
@@ -363,8 +399,7 @@
     })();
 
     function renderHistory(picks, games) {
-      const ownerOf = {};
-      for (const [owner, teams] of Object.entries(picks)) for (const t of teams) ownerOf[t] = owner;
+      const ownerOf = ownersByTeam(picks);
 
       // Colors follow the person (picks file order), never their rank.
       const series = Object.keys(picks).map((name, i) => ({ name, color: `var(--s${(i % 4) + 1})`, w: [], l: [], t: [] }));
