@@ -1,0 +1,852 @@
+{
+  "season": "2026",
+  "throughDate": "2026-10-22",
+  "games": [
+    {
+      "id": "401872656",
+      "date": "2026-09-09",
+      "teams": [
+        "Seattle Seahawks",
+        "New England Patriots"
+      ],
+      "winner": "Seattle Seahawks"
+    },
+    {
+      "id": "401872657",
+      "date": "2026-09-10",
+      "teams": [
+        "Los Angeles Rams",
+        "San Francisco 49ers"
+      ],
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872658",
+      "date": "2026-09-13",
+      "teams": [
+        "Pittsburgh Steelers",
+        "Atlanta Falcons"
+      ],
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "id": "401872659",
+      "date": "2026-09-13",
+      "teams": [
+        "Indianapolis Colts",
+        "Baltimore Ravens"
+      ],
+      "winner": "Baltimore Ravens"
+    },
+    {
+      "id": "401872660",
+      "date": "2026-09-13",
+      "teams": [
+        "Houston Texans",
+        "Buffalo Bills"
+      ],
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401872661",
+      "date": "2026-09-13",
+      "teams": [
+        "Carolina Panthers",
+        "Chicago Bears"
+      ],
+      "winner": "Chicago Bears"
+    },
+    {
+      "id": "401872922",
+      "date": "2026-09-13",
+      "teams": [
+        "Jacksonville Jaguars",
+        "Cleveland Browns"
+      ],
+      "winner": "Jacksonville Jaguars"
+    },
+    {
+      "id": "401872923",
+      "date": "2026-09-13",
+      "teams": [
+        "Detroit Lions",
+        "New Orleans Saints"
+      ],
+      "winner": "Detroit Lions"
+    },
+    {
+      "id": "401872924",
+      "date": "2026-09-13",
+      "teams": [
+        "Tennessee Titans",
+        "New York Jets"
+      ],
+      "winner": "New York Jets"
+    },
+    {
+      "id": "401872925",
+      "date": "2026-09-13",
+      "teams": [
+        "Cincinnati Bengals",
+        "Tampa Bay Buccaneers"
+      ],
+      "winner": "Cincinnati Bengals"
+    },
+    {
+      "id": "401872926",
+      "date": "2026-09-13",
+      "teams": [
+        "Los Angeles Chargers",
+        "Arizona Cardinals"
+      ],
+      "winner": "Arizona Cardinals"
+    },
+    {
+      "id": "401872927",
+      "date": "2026-09-13",
+      "teams": [
+        "Minnesota Vikings",
+        "Green Bay Packers"
+      ],
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872928",
+      "date": "2026-09-13",
+      "teams": [
+        "Las Vegas Raiders",
+        "Miami Dolphins"
+      ],
+      "winner": "Las Vegas Raiders"
+    },
+    {
+      "id": "401872929",
+      "date": "2026-09-13",
+      "teams": [
+        "Philadelphia Eagles",
+        "Washington Commanders"
+      ],
+      "winner": "Philadelphia Eagles"
+    },
+    {
+      "id": "401872930",
+      "date": "2026-09-13",
+      "teams": [
+        "New York Giants",
+        "Dallas Cowboys"
+      ],
+      "winner": "New York Giants"
+    },
+    {
+      "id": "401872931",
+      "date": "2026-09-14",
+      "teams": [
+        "Kansas City Chiefs",
+        "Denver Broncos"
+      ],
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "id": "401872932",
+      "date": "2026-09-17",
+      "teams": [
+        "Buffalo Bills",
+        "Detroit Lions"
+      ],
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401872933",
+      "date": "2026-09-20",
+      "teams": [
+        "Atlanta Falcons",
+        "Carolina Panthers"
+      ],
+      "winner": "Carolina Panthers"
+    },
+    {
+      "id": "401872934",
+      "date": "2026-09-20",
+      "teams": [
+        "Houston Texans",
+        "Cincinnati Bengals"
+      ],
+      "winner": "Cincinnati Bengals"
+    },
+    {
+      "id": "401872935",
+      "date": "2026-09-20",
+      "teams": [
+        "Tampa Bay Buccaneers",
+        "Cleveland Browns"
+      ],
+      "winner": "Cleveland Browns"
+    },
+    {
+      "id": "401872936",
+      "date": "2026-09-20",
+      "teams": [
+        "New York Jets",
+        "Green Bay Packers"
+      ],
+      "winner": "Green Bay Packers"
+    },
+    {
+      "id": "401872937",
+      "date": "2026-09-20",
+      "teams": [
+        "Chicago Bears",
+        "Minnesota Vikings"
+      ],
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872938",
+      "date": "2026-09-20",
+      "teams": [
+        "Baltimore Ravens",
+        "New Orleans Saints"
+      ],
+      "winner": "New Orleans Saints"
+    },
+    {
+      "id": "401872939",
+      "date": "2026-09-20",
+      "teams": [
+        "Tennessee Titans",
+        "Philadelphia Eagles"
+      ],
+      "winner": "Philadelphia Eagles"
+    },
+    {
+      "id": "401872940",
+      "date": "2026-09-20",
+      "teams": [
+        "Denver Broncos",
+        "Jacksonville Jaguars"
+      ],
+      "winner": "Denver Broncos"
+    },
+    {
+      "id": "401872941",
+      "date": "2026-09-20",
+      "teams": [
+        "Los Angeles Chargers",
+        "Las Vegas Raiders"
+      ],
+      "winner": "Las Vegas Raiders"
+    },
+    {
+      "id": "401872942",
+      "date": "2026-09-20",
+      "teams": [
+        "San Francisco 49ers",
+        "Miami Dolphins"
+      ],
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872943",
+      "date": "2026-09-20",
+      "teams": [
+        "Arizona Cardinals",
+        "Seattle Seahawks"
+      ],
+      "winner": "Seattle Seahawks"
+    },
+    {
+      "id": "401872944",
+      "date": "2026-09-20",
+      "teams": [
+        "Dallas Cowboys",
+        "Washington Commanders"
+      ],
+      "winner": "Dallas Cowboys"
+    },
+    {
+      "id": "401872945",
+      "date": "2026-09-20",
+      "teams": [
+        "Kansas City Chiefs",
+        "Indianapolis Colts"
+      ],
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "id": "401872946",
+      "date": "2026-09-20",
+      "teams": [
+        "New England Patriots",
+        "Pittsburgh Steelers"
+      ],
+      "winner": "New England Patriots"
+    },
+    {
+      "id": "401872947",
+      "date": "2026-09-21",
+      "teams": [
+        "Los Angeles Rams",
+        "New York Giants"
+      ],
+      "winner": "Los Angeles Rams"
+    },
+    {
+      "id": "401872948",
+      "date": "2026-09-24",
+      "teams": [
+        "Green Bay Packers",
+        "Atlanta Falcons"
+      ],
+      "winner": "Atlanta Falcons"
+    },
+    {
+      "id": "401872949",
+      "date": "2026-09-27",
+      "teams": [
+        "Cleveland Browns",
+        "Carolina Panthers"
+      ],
+      "winner": "Cleveland Browns"
+    },
+    {
+      "id": "401872950",
+      "date": "2026-09-27",
+      "teams": [
+        "Pittsburgh Steelers",
+        "Cincinnati Bengals"
+      ],
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "id": "401872951",
+      "date": "2026-09-27",
+      "teams": [
+        "Indianapolis Colts",
+        "Houston Texans"
+      ],
+      "winner": "Indianapolis Colts"
+    },
+    {
+      "id": "401872952",
+      "date": "2026-09-27",
+      "teams": [
+        "Miami Dolphins",
+        "Kansas City Chiefs"
+      ],
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "id": "401872953",
+      "date": "2026-09-27",
+      "teams": [
+        "Buffalo Bills",
+        "Los Angeles Chargers"
+      ],
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401872954",
+      "date": "2026-09-27",
+      "teams": [
+        "Detroit Lions",
+        "New York Jets"
+      ],
+      "winner": "Detroit Lions"
+    },
+    {
+      "id": "401872955",
+      "date": "2026-09-27",
+      "teams": [
+        "Washington Commanders",
+        "Seattle Seahawks"
+      ],
+      "winner": "Washington Commanders"
+    },
+    {
+      "id": "401872956",
+      "date": "2026-09-27",
+      "teams": [
+        "New York Giants",
+        "Tennessee Titans"
+      ],
+      "winner": "New York Giants"
+    },
+    {
+      "id": "401872957",
+      "date": "2026-09-27",
+      "teams": [
+        "Jacksonville Jaguars",
+        "New England Patriots"
+      ],
+      "winner": "Jacksonville Jaguars"
+    },
+    {
+      "id": "401872958",
+      "date": "2026-09-27",
+      "teams": [
+        "San Francisco 49ers",
+        "Arizona Cardinals"
+      ],
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872959",
+      "date": "2026-09-27",
+      "teams": [
+        "Tampa Bay Buccaneers",
+        "Minnesota Vikings"
+      ],
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872960",
+      "date": "2026-09-27",
+      "teams": [
+        "Dallas Cowboys",
+        "Baltimore Ravens"
+      ],
+      "winner": "Baltimore Ravens"
+    },
+    {
+      "id": "401872961",
+      "date": "2026-09-27",
+      "teams": [
+        "New Orleans Saints",
+        "Las Vegas Raiders"
+      ],
+      "winner": "Las Vegas Raiders"
+    },
+    {
+      "id": "401872962",
+      "date": "2026-09-27",
+      "teams": [
+        "Denver Broncos",
+        "Los Angeles Rams"
+      ],
+      "winner": "Denver Broncos"
+    },
+    {
+      "id": "401872963",
+      "date": "2026-09-28",
+      "teams": [
+        "Chicago Bears",
+        "Philadelphia Eagles"
+      ],
+      "winner": "Chicago Bears"
+    },
+    {
+      "id": "401872964",
+      "date": "2026-10-01",
+      "teams": [
+        "Cleveland Browns",
+        "Pittsburgh Steelers"
+      ],
+      "winner": "Cleveland Browns"
+    },
+    {
+      "id": "401872965",
+      "date": "2026-10-04",
+      "teams": [
+        "Washington Commanders",
+        "Indianapolis Colts"
+      ],
+      "winner": "Indianapolis Colts"
+    },
+    {
+      "id": "401872966",
+      "date": "2026-10-04",
+      "teams": [
+        "New York Giants",
+        "Arizona Cardinals"
+      ],
+      "winner": "New York Giants"
+    },
+    {
+      "id": "401872967",
+      "date": "2026-10-04",
+      "teams": [
+        "Houston Texans",
+        "Dallas Cowboys"
+      ],
+      "winner": "Dallas Cowboys"
+    },
+    {
+      "id": "401872968",
+      "date": "2026-10-04",
+      "teams": [
+        "Tampa Bay Buccaneers",
+        "Green Bay Packers"
+      ],
+      "winner": "Green Bay Packers"
+    },
+    {
+      "id": "401872969",
+      "date": "2026-10-04",
+      "teams": [
+        "Cincinnati Bengals",
+        "Jacksonville Jaguars"
+      ],
+      "winner": "Jacksonville Jaguars"
+    },
+    {
+      "id": "401872970",
+      "date": "2026-10-04",
+      "teams": [
+        "Philadelphia Eagles",
+        "Los Angeles Rams"
+      ],
+      "winner": "Los Angeles Rams"
+    },
+    {
+      "id": "401872971",
+      "date": "2026-10-04",
+      "teams": [
+        "Buffalo Bills",
+        "New England Patriots"
+      ],
+      "winner": "New England Patriots"
+    },
+    {
+      "id": "401872972",
+      "date": "2026-10-04",
+      "teams": [
+        "Chicago Bears",
+        "New York Jets"
+      ],
+      "winner": "Chicago Bears"
+    },
+    {
+      "id": "401872973",
+      "date": "2026-10-04",
+      "teams": [
+        "Baltimore Ravens",
+        "Tennessee Titans"
+      ],
+      "winner": "Baltimore Ravens"
+    },
+    {
+      "id": "401872974",
+      "date": "2026-10-04",
+      "teams": [
+        "Minnesota Vikings",
+        "Miami Dolphins"
+      ],
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872975",
+      "date": "2026-10-04",
+      "teams": [
+        "San Francisco 49ers",
+        "Denver Broncos"
+      ],
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872976",
+      "date": "2026-10-04",
+      "teams": [
+        "Las Vegas Raiders",
+        "Kansas City Chiefs"
+      ],
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "id": "401872977",
+      "date": "2026-10-04",
+      "teams": [
+        "Seattle Seahawks",
+        "Los Angeles Chargers"
+      ],
+      "winner": "Seattle Seahawks"
+    },
+    {
+      "id": "401872978",
+      "date": "2026-10-04",
+      "teams": [
+        "Carolina Panthers",
+        "Detroit Lions"
+      ],
+      "winner": "Carolina Panthers"
+    },
+    {
+      "id": "401872979",
+      "date": "2026-10-05",
+      "teams": [
+        "New Orleans Saints",
+        "Atlanta Falcons"
+      ],
+      "winner": "Atlanta Falcons"
+    },
+    {
+      "id": "401872980",
+      "date": "2026-10-08",
+      "teams": [
+        "Dallas Cowboys",
+        "Tampa Bay Buccaneers"
+      ],
+      "winner": "Tampa Bay Buccaneers"
+    },
+    {
+      "id": "401872981",
+      "date": "2026-10-11",
+      "teams": [
+        "Jacksonville Jaguars",
+        "Philadelphia Eagles"
+      ],
+      "winner": "Jacksonville Jaguars"
+    },
+    {
+      "id": "401872982",
+      "date": "2026-10-11",
+      "teams": [
+        "Miami Dolphins",
+        "Cincinnati Bengals"
+      ],
+      "winner": "Cincinnati Bengals"
+    },
+    {
+      "id": "401872983",
+      "date": "2026-10-11",
+      "teams": [
+        "New York Jets",
+        "Cleveland Browns"
+      ],
+      "winner": "New York Jets"
+    },
+    {
+      "id": "401872984",
+      "date": "2026-10-11",
+      "teams": [
+        "Tennessee Titans",
+        "Houston Texans"
+      ],
+      "winner": "Houston Texans"
+    },
+    {
+      "id": "401872985",
+      "date": "2026-10-11",
+      "teams": [
+        "Pittsburgh Steelers",
+        "Indianapolis Colts"
+      ],
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "id": "401872986",
+      "date": "2026-10-11",
+      "teams": [
+        "New England Patriots",
+        "Las Vegas Raiders"
+      ],
+      "winner": "New England Patriots"
+    },
+    {
+      "id": "401872987",
+      "date": "2026-10-11",
+      "teams": [
+        "New Orleans Saints",
+        "Minnesota Vikings"
+      ],
+      "winner": "Minnesota Vikings"
+    },
+    {
+      "id": "401872988",
+      "date": "2026-10-11",
+      "teams": [
+        "Washington Commanders",
+        "New York Giants"
+      ],
+      "winner": null
+    },
+    {
+      "id": "401872989",
+      "date": "2026-10-11",
+      "teams": [
+        "Los Angeles Chargers",
+        "Denver Broncos"
+      ],
+      "winner": "Denver Broncos"
+    },
+    {
+      "id": "401872990",
+      "date": "2026-10-11",
+      "teams": [
+        "Green Bay Packers",
+        "Chicago Bears"
+      ],
+      "winner": "Green Bay Packers"
+    },
+    {
+      "id": "401872991",
+      "date": "2026-10-11",
+      "teams": [
+        "Arizona Cardinals",
+        "Detroit Lions"
+      ],
+      "winner": "Detroit Lions"
+    },
+    {
+      "id": "401872992",
+      "date": "2026-10-11",
+      "teams": [
+        "Seattle Seahawks",
+        "San Francisco 49ers"
+      ],
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401872993",
+      "date": "2026-10-11",
+      "teams": [
+        "Atlanta Falcons",
+        "Baltimore Ravens"
+      ],
+      "winner": "Baltimore Ravens"
+    },
+    {
+      "id": "401872994",
+      "date": "2026-10-12",
+      "teams": [
+        "Los Angeles Rams",
+        "Buffalo Bills"
+      ],
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401872995",
+      "date": "2026-10-15",
+      "teams": [
+        "Denver Broncos",
+        "Seattle Seahawks"
+      ],
+      "winner": "Denver Broncos"
+    },
+    {
+      "id": "401872996",
+      "date": "2026-10-18",
+      "teams": [
+        "Jacksonville Jaguars",
+        "Houston Texans"
+      ],
+      "winner": "Houston Texans"
+    },
+    {
+      "id": "401872997",
+      "date": "2026-10-18",
+      "teams": [
+        "Cleveland Browns",
+        "Baltimore Ravens"
+      ],
+      "winner": "Cleveland Browns"
+    },
+    {
+      "id": "401872998",
+      "date": "2026-10-18",
+      "teams": [
+        "Philadelphia Eagles",
+        "Carolina Panthers"
+      ],
+      "winner": "Carolina Panthers"
+    },
+    {
+      "id": "401872999",
+      "date": "2026-10-18",
+      "teams": [
+        "Atlanta Falcons",
+        "Chicago Bears"
+      ],
+      "winner": "Chicago Bears"
+    },
+    {
+      "id": "401873000",
+      "date": "2026-10-18",
+      "teams": [
+        "New York Giants",
+        "New Orleans Saints"
+      ],
+      "winner": "New Orleans Saints"
+    },
+    {
+      "id": "401873001",
+      "date": "2026-10-18",
+      "teams": [
+        "New England Patriots",
+        "New York Jets"
+      ],
+      "winner": "New England Patriots"
+    },
+    {
+      "id": "401873002",
+      "date": "2026-10-18",
+      "teams": [
+        "Tampa Bay Buccaneers",
+        "Pittsburgh Steelers"
+      ],
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "id": "401873003",
+      "date": "2026-10-18",
+      "teams": [
+        "Indianapolis Colts",
+        "Tennessee Titans"
+      ],
+      "winner": "Tennessee Titans"
+    },
+    {
+      "id": "401873004",
+      "date": "2026-10-18",
+      "teams": [
+        "Los Angeles Rams",
+        "Arizona Cardinals"
+      ],
+      "winner": "Arizona Cardinals"
+    },
+    {
+      "id": "401873005",
+      "date": "2026-10-18",
+      "teams": [
+        "Las Vegas Raiders",
+        "Buffalo Bills"
+      ],
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401873006",
+      "date": "2026-10-18",
+      "teams": [
+        "Kansas City Chiefs",
+        "Los Angeles Chargers"
+      ],
+      "winner": "Kansas City Chiefs"
+    },
+    {
+      "id": "401873007",
+      "date": "2026-10-18",
+      "teams": [
+        "Green Bay Packers",
+        "Dallas Cowboys"
+      ],
+      "winner": "Green Bay Packers"
+    },
+    {
+      "id": "401873008",
+      "date": "2026-10-19",
+      "teams": [
+        "San Francisco 49ers",
+        "Washington Commanders"
+      ],
+      "winner": "San Francisco 49ers"
+    },
+    {
+      "id": "401873010",
+      "date": "2026-10-22",
+      "teams": [
+        "Chicago Bears",
+        "New England Patriots"
+      ],
+      "winner": "Chicago Bears"
+    }
+  ]
+}

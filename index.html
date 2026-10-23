@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NBA Picks Tracker</title>
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
+  <title>Picks Tracker</title>
+  <link rel="icon" id="favicon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏀</text></svg>">
   <style>
     :root {
       --bg: #f5f5f4;
@@ -46,9 +46,21 @@
       font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
     }
     main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    .title-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
     header h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
     header p { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
+    #league {
+      appearance: none;
+      font: inherit; font-size: 15px; font-weight: 600;
+      color: var(--text); background-color: var(--card);
+      border: 1px solid var(--border); border-radius: 999px;
+      padding: 6px 34px 6px 14px; cursor: pointer;
+      background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%2378716c' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+      background-repeat: no-repeat; background-position: right 12px center;
+    }
+    #league:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 40px 0 12px; }
+    main.loading > :not(header) { opacity: 0.5; transition: opacity 0.15s; }
 
     .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
 
@@ -84,6 +96,7 @@
     .teams .rec { font-variant-numeric: tabular-nums; font-weight: 600; }
     .rec .w { color: var(--win); }
     .rec .l { color: var(--loss); }
+    .rec .t { color: var(--muted); }
 
     .chart-card { padding: 16px; }
     .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0 0 8px; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
@@ -121,9 +134,15 @@
   </style>
 </head>
 <body>
-  <main>
+  <main id="main">
     <header>
-      <h1>🏀 NBA Picks Tracker</h1>
+      <div class="title-row">
+        <h1 id="title">Picks Tracker</h1>
+        <select id="league" aria-label="League">
+          <option value="nba">🏀 NBA</option>
+          <option value="nfl">🏈 NFL</option>
+        </select>
+      </div>
       <p id="updated">Loading…</p>
     </header>
 
@@ -150,26 +169,52 @@
   </main>
 
   <script>
-    const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
-    const record = (w, l) => `<span class="w">${w}</span>–<span class="l">${l}</span>`;
-    const pct = (w, l) => (w + l ? (w / (w + l)).toFixed(3).replace(/^0/, "") : ".000");
+    const LEAGUES = {
+      nba: { label: "NBA", emoji: "🏀" },
+      nfl: { label: "NFL", emoji: "🏈" },
+    };
 
-    async function load() {
+    const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
+    const recText = (w, l, t) => `${w}–${l}${t ? `–${t}` : ""}`;
+    const record = (w, l, t) => `<span class="w">${w}</span>–<span class="l">${l}</span>${t ? `–<span class="t">${t}</span>` : ""}`;
+    const pct = (w, l, t) => (w + l + t ? ((w + t / 2) / (w + l + t)).toFixed(3).replace(/^0/, "") : ".000");
+
+    const SVG_TAGS = new Set(["g", "line", "path", "circle", "rect", "text", "tspan"]);
+    function el(tag, attrs = {}, text) {
+      const node = SVG_TAGS.has(tag) ? document.createElementNS("http://www.w3.org/2000/svg", tag) : document.createElement(tag);
+      for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
+      if (text != null) node.textContent = text;
+      return node;
+    }
+    const addDays = (iso, n) => new Date(Date.parse(iso + "T12:00:00Z") + n * 86400000).toISOString().slice(0, 10);
+    const fmtDay = (iso) => new Date(iso + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
+
+    const select = document.getElementById("league");
+    let loadId = 0;
+
+    async function load(league) {
+      const id = ++loadId;
+      const { label, emoji } = LEAGUES[league];
+      document.getElementById("title").textContent = `${emoji} ${label} Picks Tracker`;
+      document.title = `${label} Picks Tracker`;
+      document.getElementById("favicon").href = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>${emoji}</text></svg>`;
+      document.getElementById("main").classList.add("loading");
+
       const [picks, standings, games] = await Promise.all([
-        fetch("picks.json", { cache: "no-store" }).then((r) => r.json()),
-        fetch("data/standings.json", { cache: "no-store" }).then((r) => r.json()),
-        fetch("data/games.json", { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
+        fetch(`picks/${league}.json`, { cache: "no-store" }).then((r) => r.json()),
+        fetch(`data/${league}/standings.json`, { cache: "no-store" }).then((r) => r.json()),
+        fetch(`data/${league}/games.json`, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
       ]);
-      if (games?.games.length) renderHistory(picks, games);
+      if (id !== loadId) return; // a newer league selection won the race
+      document.getElementById("main").classList.remove("loading");
 
       // One point per win; ties broken by fewer losses.
       const owners = Object.entries(picks).map(([name, teamNames]) => {
         const teams = teamNames
-          .map((t) => ({ name: t, ...(standings.teams[t] ?? { wins: 0, losses: 0 }) }))
+          .map((t) => ({ name: t, wins: 0, losses: 0, ties: 0, ...standings.teams[t] }))
           .sort((a, b) => b.wins - a.wins || a.losses - b.losses || a.name.localeCompare(b.name));
-        const wins = teams.reduce((n, t) => n + t.wins, 0);
-        const losses = teams.reduce((n, t) => n + t.losses, 0);
-        return { name, teams, wins, losses };
+        const sum = (key) => teams.reduce((n, t) => n + t[key], 0);
+        return { name, teams, wins: sum("wins"), losses: sum("losses"), ties: sum("ties") };
       }).sort((a, b) => b.wins - a.wins || a.losses - b.losses);
 
       const maxWins = Math.max(1, ...owners.map((o) => o.wins));
@@ -182,7 +227,7 @@
             <div class="rank">${rank}</div>
             <div>
               <div class="name">${esc(o.name)}${rank === 1 ? " 🔥" : ""}</div>
-              <div class="meta">${o.wins}–${o.losses} · ${pct(o.wins, o.losses)}</div>
+              <div class="meta">${recText(o.wins, o.losses, o.ties)} · ${pct(o.wins, o.losses, o.ties)}</div>
               <div class="bar"><span style="width:${(o.wins / maxWins) * 100}%"></span></div>
             </div>
             <div class="pts">${o.wins}<small>${o.wins === 1 ? "pt" : "pts"}</small></div>
@@ -191,80 +236,35 @@
 
       document.getElementById("owners").innerHTML = owners.map((o) => `
         <section class="owner card">
-          <h3>${esc(o.name)} <span>${o.wins} pts · ${o.wins}–${o.losses}</span></h3>
+          <h3>${esc(o.name)} <span>${o.wins} pts · ${recText(o.wins, o.losses, o.ties)}</span></h3>
           <ul class="teams">
             ${o.teams.map((t) => `
               <li>
                 ${t.logo ? `<img src="${esc(t.logo)}" alt="" loading="lazy">` : ""}
                 <span class="team">${esc(t.name)}</span>
-                <span class="rec">${record(t.wins, t.losses)}</span>
+                <span class="rec">${record(t.wins, t.losses, t.ties)}</span>
               </li>`).join("")}
           </ul>
         </section>`).join("");
 
       const when = new Date(standings.updatedAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
       document.getElementById("updated").textContent = `${standings.season ?? ""} season · Updated ${when}`;
-    }
 
-    const SVG_TAGS = new Set(["g", "line", "path", "circle", "rect", "text", "tspan"]);
-    function el(tag, attrs = {}, text) {
-      const node = SVG_TAGS.has(tag) ? document.createElementNS("http://www.w3.org/2000/svg", tag) : document.createElement(tag);
-      for (const [k, v] of Object.entries(attrs)) node.setAttribute(k, v);
-      if (text != null) node.textContent = text;
-      return node;
+      if (games?.games.length) renderHistory(picks, games);
+      else document.getElementById("history").hidden = true;
     }
-    const addDays = (iso, n) => new Date(Date.parse(iso + "T12:00:00Z") + n * 86400000).toISOString().slice(0, 10);
-    const fmtDay = (iso) => new Date(iso + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
 
     // Line chart of cumulative points (wins) per person, one point per calendar day.
-    function renderHistory(picks, games) {
-      const ownerOf = {};
-      for (const [owner, teams] of Object.entries(picks)) for (const t of teams) ownerOf[t] = owner;
-
-      // Colors follow the person (picks.json order), never their rank.
-      const series = Object.keys(picks).map((name, i) => ({ name, color: `var(--s${(i % 4) + 1})`, w: [], l: [] }));
-      const days = [];
-      for (let d = games.games[0].date; d <= games.throughDate; d = addDays(d, 1)) days.push(d);
-      const tally = Object.fromEntries(series.map((s) => [s.name, { w: 0, l: 0 }]));
-      let gi = 0;
-      for (const day of days) {
-        for (; gi < games.games.length && games.games[gi].date === day; gi++) {
-          const g = games.games[gi];
-          if (ownerOf[g.winner]) tally[ownerOf[g.winner]].w++;
-          if (ownerOf[g.loser]) tally[ownerOf[g.loser]].l++;
-        }
-        for (const s of series) { s.w.push(tally[s.name].w); s.l.push(tally[s.name].l); }
-      }
-
-      document.getElementById("history").hidden = false;
-      const legend = document.getElementById("legend");
-      legend.replaceChildren(...series.map((s) => {
-        const li = el("li");
-        li.append(el("i", { style: `background:${s.color}` }), document.createTextNode(s.name));
-        return li;
-      }));
-
-      // Table view: newest day first.
-      const table = document.getElementById("history-table");
-      const head = el("tr");
-      head.append(el("th", {}, "Date"), ...series.map((s) => el("th", {}, s.name)));
-      const thead = el("thead"); thead.append(head);
-      const tbody = el("tbody");
-      for (let i = days.length - 1; i >= 0; i--) {
-        const tr = el("tr");
-        tr.append(el("td", {}, fmtDay(days[i])), ...series.map((s) => el("td", {}, `${s.w[i]} (${s.w[i]}–${s.l[i]})`)));
-        tbody.append(tr);
-      }
-      table.replaceChildren(thead, tbody);
-
+    const chart = (() => {
       const svg = document.getElementById("chart");
       const wrap = document.getElementById("chart-wrap");
       const tooltip = document.getElementById("tooltip");
       const H = 260, m = { top: 12, right: 84, bottom: 26, left: 28 };
-      let active = null, geom;
+      let series = [], days = [], active = null, geom;
 
       function draw() {
         const W = wrap.clientWidth;
+        if (!days.length || !W) return;
         const pw = W - m.left - m.right, ph = H - m.top - m.bottom;
         const max = Math.max(1, ...series.map((s) => s.w.at(-1)));
         const step = [1, 2, 5, 10, 20, 25, 50, 100].find((s) => max / s <= 5);
@@ -294,7 +294,7 @@
         }
 
         // End labels: name + current points, nudged apart so they never overlap.
-        const ends = series.map((s) => ({ s, y: y(s.w.at(-1)) })).sort((a, b) => a.y - b.y);
+        const ends = series.map((s) => ({ s, y: y(s.w.at(-1)) })).sort((a, b) => a.y - b.y || a.s.l.at(-1) - b.s.l.at(-1));
         for (let i = 1; i < ends.length; i++) ends[i].y = Math.max(ends[i].y, ends[i - 1].y + 15);
         const overflow = ends.at(-1).y - (m.top + ph);
         if (overflow > 0) for (const e of ends) e.y -= overflow;
@@ -312,6 +312,7 @@
       }
 
       function showAt(i) {
+        if (!geom) return;
         active = i;
         const { x, y, W } = geom;
         const cursor = svg.querySelector("#cursor");
@@ -320,7 +321,7 @@
 
         const rows = [...series].sort((a, b) => b.w[i] - a.w[i] || a.l[i] - b.l[i]).map((s) => {
           const row = el("div", { class: "row" });
-          row.append(el("i", { style: `background:${s.color}` }), el("b", {}, s.w[i]), document.createTextNode(s.name + " "), el("span", {}, `${s.w[i]}–${s.l[i]}`));
+          row.append(el("i", { style: `background:${s.color}` }), el("b", {}, s.w[i]), document.createTextNode(s.name + " "), el("span", {}, recText(s.w[i], s.l[i], s.t[i])));
           return row;
         });
         tooltip.replaceChildren(el("div", { class: "date" }, fmtDay(days[i])), ...rows);
@@ -333,30 +334,111 @@
         tooltip.hidden = true;
         svg.querySelector("#cursor")?.replaceChildren();
       }
+      const clamp = (i) => Math.min(days.length - 1, Math.max(0, i));
       const nearest = (clientX) => {
         const rect = svg.getBoundingClientRect();
         const px = ((clientX - rect.left) / rect.width) * geom.W;
-        const i = days.length > 1 ? Math.round(((px - m.left) / geom.pw) * (days.length - 1)) : 0;
-        return Math.min(days.length - 1, Math.max(0, i));
+        return clamp(days.length > 1 ? Math.round(((px - m.left) / geom.pw) * (days.length - 1)) : 0);
       };
 
-      svg.addEventListener("pointermove", (e) => showAt(nearest(e.clientX)));
+      svg.addEventListener("pointermove", (e) => geom && showAt(nearest(e.clientX)));
       svg.addEventListener("pointerleave", hide);
       svg.addEventListener("focus", () => showAt(active ?? days.length - 1));
       svg.addEventListener("blur", hide);
       svg.addEventListener("keydown", (e) => {
         if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
         e.preventDefault();
-        showAt(Math.min(days.length - 1, Math.max(0, (active ?? days.length - 1) + (e.key === "ArrowRight" ? 1 : -1))));
+        showAt(clamp((active ?? days.length - 1) + (e.key === "ArrowRight" ? 1 : -1)));
       });
       new ResizeObserver(draw).observe(wrap);
-      draw();
+
+      return {
+        set(newSeries, newDays) {
+          series = newSeries;
+          days = newDays;
+          hide();
+          draw();
+        },
+      };
+    })();
+
+    function renderHistory(picks, games) {
+      const ownerOf = {};
+      for (const [owner, teams] of Object.entries(picks)) for (const t of teams) ownerOf[t] = owner;
+
+      // Colors follow the person (picks file order), never their rank.
+      const series = Object.keys(picks).map((name, i) => ({ name, color: `var(--s${(i % 4) + 1})`, w: [], l: [], t: [] }));
+      const days = [];
+      for (let d = games.games[0].date; d <= games.throughDate; d = addDays(d, 1)) days.push(d);
+      const tally = Object.fromEntries(series.map((s) => [s.name, { w: 0, l: 0, t: 0 }]));
+      let gi = 0;
+      for (const day of days) {
+        for (; gi < games.games.length && games.games[gi].date === day; gi++) {
+          const g = games.games[gi];
+          for (const team of g.teams) {
+            const owner = ownerOf[team];
+            if (!owner) continue;
+            tally[owner][g.winner === null ? "t" : g.winner === team ? "w" : "l"]++;
+          }
+        }
+        for (const s of series) { s.w.push(tally[s.name].w); s.l.push(tally[s.name].l); s.t.push(tally[s.name].t); }
+      }
+
+      document.getElementById("history").hidden = false;
+      document.getElementById("legend").replaceChildren(...series.map((s) => {
+        const li = el("li");
+        li.append(el("i", { style: `background:${s.color}` }), document.createTextNode(s.name));
+        return li;
+      }));
+
+      // Table view: newest day first.
+      const head = el("tr");
+      head.append(el("th", {}, "Date"), ...series.map((s) => el("th", {}, s.name)));
+      const thead = el("thead");
+      thead.append(head);
+      const tbody = el("tbody");
+      for (let i = days.length - 1; i >= 0; i--) {
+        const tr = el("tr");
+        tr.append(el("td", {}, fmtDay(days[i])), ...series.map((s) => el("td", {}, `${s.w[i]} (${recText(s.w[i], s.l[i], s.t[i])})`)));
+        tbody.append(tr);
+      }
+      document.getElementById("history-table").replaceChildren(thead, tbody);
+
+      chart.set(series, days);
     }
 
-    load().catch((err) => {
-      document.getElementById("updated").textContent = "";
-      document.getElementById("board").innerHTML = `<li class="error">Couldn't load standings: ${esc(err.message)}</li>`;
+    // League comes from ?league= (shareable), then the viewer's last choice, then NBA.
+    function initialLeague() {
+      const fromUrl = new URLSearchParams(location.search).get("league");
+      if (LEAGUES[fromUrl]) return fromUrl;
+      try {
+        const saved = localStorage.getItem("league");
+        if (LEAGUES[saved]) return saved;
+      } catch {}
+      return "nba";
+    }
+
+    function show(league) {
+      load(league).catch((err) => {
+        document.getElementById("main").classList.remove("loading");
+        document.getElementById("updated").textContent = "";
+        document.getElementById("board").innerHTML = `<li class="error">Couldn't load standings: ${esc(err.message)}</li>`;
+        document.getElementById("owners").innerHTML = "";
+        document.getElementById("history").hidden = true;
+      });
+    }
+
+    select.addEventListener("change", () => {
+      const league = select.value;
+      const url = new URL(location.href);
+      url.searchParams.set("league", league);
+      history.replaceState(null, "", url);
+      try { localStorage.setItem("league", league); } catch {}
+      show(league);
     });
+
+    select.value = initialLeague();
+    show(select.value);
   </script>
 </body>
 </html>

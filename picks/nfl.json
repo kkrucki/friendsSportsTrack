@@ -1,0 +1,42 @@
+{
+  "KUNKEL": [
+    "San Francisco 49ers",
+    "Green Bay Packers",
+    "Pittsburgh Steelers",
+    "New England Patriots",
+    "Jacksonville Jaguars",
+    "Carolina Panthers",
+    "New York Giants",
+    "Las Vegas Raiders"
+  ],
+  "JIM": [
+    "Buffalo Bills",
+    "Chicago Bears",
+    "Denver Broncos",
+    "Cincinnati Bengals",
+    "Indianapolis Colts",
+    "Atlanta Falcons",
+    "Los Angeles Rams",
+    "Washington Commanders"
+  ],
+  "ANDREW": [
+    "Minnesota Vikings",
+    "Baltimore Ravens",
+    "Philadelphia Eagles",
+    "New York Jets",
+    "New Orleans Saints",
+    "Arizona Cardinals",
+    "Houston Texans",
+    "Los Angeles Chargers"
+  ],
+  "KRUCKI": [
+    "Kansas City Chiefs",
+    "Cleveland Browns",
+    "Detroit Lions",
+    "Seattle Seahawks",
+    "Dallas Cowboys",
+    "Tampa Bay Buccaneers",
+    "Tennessee Titans",
+    "Miami Dolphins"
+  ]
+}
