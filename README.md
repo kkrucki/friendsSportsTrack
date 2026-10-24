@@ -4,7 +4,7 @@ A static site showing whose NBA and NFL teams are winning. Use the dropdown at t
 
 - `picks/<league>.json`: who picked which teams (names must match ESPN's names, e.g. "LA Clippers"). Keep people in the same order in every file so each person keeps their chart color.
 - `scripts/update.mjs`: pulls standings and game results from ESPN's public API into `data/<league>/`
-- `.github/workflows/update-standings.yml`: runs the script every day at 10:00 UTC and commits the result
+- `.github/workflows/update-standings.yml`: runs the script every day at 09:37 UTC (with a backup run at 11:43 UTC) and commits the result
 - `index.html`: the page
 
 ## Run locally

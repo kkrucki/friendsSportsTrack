@@ -2,8 +2,11 @@ name: Update standings
 
 on:
   schedule:
-    # 10:00 UTC = 6 AM ET during daylight time (5 AM ET in winter), well after West Coast games end.
-    - cron: "0 10 * * *"
+    # 09:37 UTC = 5:37 AM ET during daylight time (4:37 AM ET in winter), well after West Coast games end.
+    # Off-minute times dodge GitHub's top-of-hour scheduling backlog. The 11:43 run is a backup in case
+    # the first is delayed or dropped; if nothing changed it commits only a new timestamp.
+    - cron: "37 9 * * *"
+    - cron: "43 11 * * *"
   workflow_dispatch: # lets you run it manually from the Actions tab
 
 permissions:
