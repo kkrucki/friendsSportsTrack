@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-10-22",
+  "throughDate": "2026-10-23",
   "games": [
     {
       "id": "401909088",
@@ -145,6 +145,114 @@
         "Denver Nuggets"
       ],
       "winner": "Oklahoma City Thunder"
+    },
+    {
+      "id": "401909095",
+      "date": "2026-10-23",
+      "teams": [
+        "Boston Celtics",
+        "New York Knicks"
+      ],
+      "winner": "Boston Celtics"
+    },
+    {
+      "id": "401909096",
+      "date": "2026-10-23",
+      "teams": [
+        "San Antonio Spurs",
+        "Houston Rockets"
+      ],
+      "winner": "Houston Rockets"
+    },
+    {
+      "id": "401909843",
+      "date": "2026-10-23",
+      "teams": [
+        "Charlotte Hornets",
+        "Atlanta Hawks"
+      ],
+      "winner": "Atlanta Hawks"
+    },
+    {
+      "id": "401909844",
+      "date": "2026-10-23",
+      "teams": [
+        "Indiana Pacers",
+        "Dallas Mavericks"
+      ],
+      "winner": "Dallas Mavericks"
+    },
+    {
+      "id": "401909845",
+      "date": "2026-10-23",
+      "teams": [
+        "Orlando Magic",
+        "Minnesota Timberwolves"
+      ],
+      "winner": "Minnesota Timberwolves"
+    },
+    {
+      "id": "401909846",
+      "date": "2026-10-23",
+      "teams": [
+        "Washington Wizards",
+        "Toronto Raptors"
+      ],
+      "winner": "Toronto Raptors"
+    },
+    {
+      "id": "401909847",
+      "date": "2026-10-23",
+      "teams": [
+        "Miami Heat",
+        "Detroit Pistons"
+      ],
+      "winner": "Detroit Pistons"
+    },
+    {
+      "id": "401909848",
+      "date": "2026-10-23",
+      "teams": [
+        "Milwaukee Bucks",
+        "Chicago Bulls"
+      ],
+      "winner": "Chicago Bulls"
+    },
+    {
+      "id": "401909849",
+      "date": "2026-10-23",
+      "teams": [
+        "Utah Jazz",
+        "New Orleans Pelicans"
+      ],
+      "winner": "Utah Jazz"
+    },
+    {
+      "id": "401909850",
+      "date": "2026-10-23",
+      "teams": [
+        "Golden State Warriors",
+        "Memphis Grizzlies"
+      ],
+      "winner": "Memphis Grizzlies"
+    },
+    {
+      "id": "401909851",
+      "date": "2026-10-23",
+      "teams": [
+        "Los Angeles Lakers",
+        "LA Clippers"
+      ],
+      "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909852",
+      "date": "2026-10-23",
+      "teams": [
+        "Sacramento Kings",
+        "Portland Trail Blazers"
+      ],
+      "winner": "Portland Trail Blazers"
     }
   ]
 }
