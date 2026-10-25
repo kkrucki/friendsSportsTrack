@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-10-23",
+  "throughDate": "2026-10-24",
   "games": [
     {
       "id": "401909088",
@@ -253,6 +253,78 @@
         "Portland Trail Blazers"
       ],
       "winner": "Portland Trail Blazers"
+    },
+    {
+      "id": "401909853",
+      "date": "2026-10-24",
+      "teams": [
+        "Charlotte Hornets",
+        "Miami Heat"
+      ],
+      "winner": "Charlotte Hornets"
+    },
+    {
+      "id": "401909854",
+      "date": "2026-10-24",
+      "teams": [
+        "Cleveland Cavaliers",
+        "Brooklyn Nets"
+      ],
+      "winner": "Cleveland Cavaliers"
+    },
+    {
+      "id": "401909855",
+      "date": "2026-10-24",
+      "teams": [
+        "Philadelphia 76ers",
+        "Milwaukee Bucks"
+      ],
+      "winner": "Philadelphia 76ers"
+    },
+    {
+      "id": "401909856",
+      "date": "2026-10-24",
+      "teams": [
+        "Atlanta Hawks",
+        "Houston Rockets"
+      ],
+      "winner": "Houston Rockets"
+    },
+    {
+      "id": "401909857",
+      "date": "2026-10-24",
+      "teams": [
+        "Chicago Bulls",
+        "Washington Wizards"
+      ],
+      "winner": "Washington Wizards"
+    },
+    {
+      "id": "401909858",
+      "date": "2026-10-24",
+      "teams": [
+        "Dallas Mavericks",
+        "San Antonio Spurs"
+      ],
+      "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909859",
+      "date": "2026-10-24",
+      "teams": [
+        "Denver Nuggets",
+        "New Orleans Pelicans"
+      ],
+      "winner": "Denver Nuggets"
+    },
+    {
+      "id": "401909860",
+      "date": "2026-10-24",
+      "teams": [
+        "Phoenix Suns",
+        "Golden State Warriors"
+      ],
+      "winner": "Phoenix Suns"
     }
   ]
 }
