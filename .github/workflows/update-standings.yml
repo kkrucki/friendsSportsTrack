@@ -3,11 +3,8 @@ name: Update standings
 on:
   schedule:
     # 09:37 UTC = 5:37 AM ET during daylight time (4:37 AM ET in winter), well after West Coast games end.
-    # Off-minute times dodge GitHub's top-of-hour scheduling backlog. The 11:43 run is a backup in case
-    # the first is delayed or dropped; if nothing changed it commits only a new timestamp.
-    # Scheduled runs act as whoever last changed these cron lines, so commit them as the repo owner.
-    - cron: "37 9 * * *" # main run
-    - cron: "43 11 * * *" # backup run
+    # GitHub often starts scheduled runs late; until this runs, the page fetches the missing days from ESPN itself.
+    - cron: "37 9 * * *"
   workflow_dispatch: # lets you run it manually from the Actions tab
 
 permissions:

@@ -171,7 +171,9 @@
     <div class="owners" id="owners"></div>
   </main>
 
-  <script>
+  <script type="module">
+    import { LEAGUES as ESPN_PATHS, etDate, addDays, fetchGames, mergeGames, recordsFromGames } from "./lib/espn.js";
+
     const LEAGUES = {
       nba: { label: "NBA", emoji: "🏀" },
       nfl: { label: "NFL", emoji: "🏈" },
@@ -189,11 +191,26 @@
       if (text != null) node.textContent = text;
       return node;
     }
-    const addDays = (iso, n) => new Date(Date.parse(iso + "T12:00:00Z") + n * 86400000).toISOString().slice(0, 10);
     const fmtDay = (iso) => new Date(iso + "T12:00:00").toLocaleDateString(undefined, { month: "short", day: "numeric" });
 
     const select = document.getElementById("league");
     let loadId = 0;
+
+    // The daily GitHub job saves results through yesterday, but GitHub often runs it hours late.
+    // Until it has run, fetch the missing days straight from ESPN so everyone sees results through
+    // yesterday. Once the saved data is current, no ESPN requests are made.
+    async function fillIn(league, games) {
+      const yesterday = addDays(etDate(new Date()), -1);
+      if (!games || games.throughDate >= yesterday) return games;
+      const gapDays = (Date.parse(yesterday) - Date.parse(games.throughDate)) / 86400000;
+      if (gapDays > 14) return games; // off-season or a stale season: don't burst requests
+      try {
+        const fresh = await fetchGames(ESPN_PATHS[league], games.throughDate, yesterday, { signal: AbortSignal.timeout(6000) });
+        return { ...games, throughDate: yesterday, games: mergeGames(games.games, fresh) };
+      } catch {
+        return games;
+      }
+    }
 
     async function load(league) {
       const id = ++loadId;
@@ -203,18 +220,24 @@
       document.getElementById("favicon").href = `data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>${emoji}</text></svg>`;
       document.getElementById("main").classList.add("loading");
 
-      const [picks, standings, games] = await Promise.all([
+      const [picks, standings, saved] = await Promise.all([
         fetch(`picks/${league}.json`, { cache: "no-store" }).then((r) => r.json()),
         fetch(`data/${league}/standings.json`, { cache: "no-store" }).then((r) => r.json()),
         fetch(`data/${league}/games.json`, { cache: "no-store" }).then((r) => (r.ok ? r.json() : null)).catch(() => null),
       ]);
+      const games = await fillIn(league, saved);
       if (id !== loadId) return; // a newer league selection won the race
       document.getElementById("main").classList.remove("loading");
+
+      // Records come from game results so everything shows the same "through yesterday" snapshot;
+      // standings.json supplies logos (and records only if games.json is missing).
+      const records = games ? recordsFromGames(games.games) : null;
+      const teamRecord = (t) => (records ? { wins: 0, losses: 0, ties: 0, ...records[t] } : standings.teams[t]);
 
       // One point per win; ties broken by fewer losses.
       const owners = Object.entries(picks).map(([name, teamNames]) => {
         const teams = teamNames
-          .map((t) => ({ name: t, wins: 0, losses: 0, ties: 0, ...standings.teams[t] }))
+          .map((t) => ({ name: t, wins: 0, losses: 0, ties: 0, ...standings.teams[t], ...teamRecord(t) }))
           .sort((a, b) => b.wins - a.wins || a.losses - b.losses || a.name.localeCompare(b.name));
         const sum = (key) => teams.reduce((n, t) => n + t[key], 0);
         return { name, teams, wins: sum("wins"), losses: sum("losses"), ties: sum("ties") };
@@ -260,8 +283,10 @@
           </ul>
         </section>`).join("");
 
-      const when = new Date(standings.updatedAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" });
-      document.getElementById("updated").textContent = `${standings.season ?? ""} season · Updated ${when}`;
+      const asOf = games
+        ? `Results through ${new Date(games.throughDate + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })}`
+        : `Updated ${new Date(standings.updatedAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
+      document.getElementById("updated").textContent = `${standings.season ?? ""} season · ${asOf}`;
 
       document.getElementById("history").hidden = !hasGames;
       if (hasGames) renderHistory(picks, games);

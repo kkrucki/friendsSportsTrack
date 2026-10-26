@@ -2,17 +2,9 @@
 // writing data/<league>/standings.json and data/<league>/games.json.
 // Run with: node scripts/update.mjs   (Node 18+, no dependencies)
 import { readFile, writeFile, mkdir } from "node:fs/promises";
+import { LEAGUES, etDate, addDays, getJson, fetchGames, mergeGames } from "../lib/espn.js";
 
-const LEAGUES = { nba: "basketball/nba", nfl: "football/nfl" };
 const root = new URL("..", import.meta.url);
-
-const getJson = async (url) => {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`${url} responded ${res.status}`);
-  return res.json();
-};
-const etDate = (d) => new Intl.DateTimeFormat("en-CA", { timeZone: "America/New_York" }).format(d); // YYYY-MM-DD
-const addDays = (iso, n) => new Date(Date.parse(iso + "T12:00:00Z") + n * 86400000).toISOString().slice(0, 10);
 
 for (const [league, path] of Object.entries(LEAGUES)) {
   const dir = new URL(`data/${league}/`, root);
@@ -59,24 +51,8 @@ for (const [league, path] of Object.entries(LEAGUES)) {
 
   const yesterday = addDays(etDate(new Date()), -1);
   const last = yesterday < seasonEnd ? yesterday : seasonEnd;
-  const games = new Map(cache.games.map((g) => [g.id, g]));
-
-  for (let day = cache.throughDate ?? seasonStart; day <= last; day = addDays(day, 1)) {
-    const board = await getJson(`https://site.api.espn.com/apis/site/v2/sports/${path}/scoreboard?dates=${day.replaceAll("-", "")}`);
-    for (const event of board.events) {
-      const comp = event.competitions[0];
-      if (event.season?.type !== 2 || !comp.status.type.completed) continue;
-      games.set(event.id, {
-        id: event.id,
-        date: day,
-        teams: comp.competitors.map((c) => c.team.displayName),
-        winner: comp.competitors.find((c) => c.winner)?.team.displayName ?? null, // null = tie
-      });
-    }
-  }
-
+  cache.games = mergeGames(cache.games, await fetchGames(path, cache.throughDate ?? seasonStart, last));
   if (last >= seasonStart) cache.throughDate = last;
-  cache.games = [...games.values()].sort((a, b) => a.date.localeCompare(b.date) || a.id.localeCompare(b.id));
   await writeFile(gamesFile, JSON.stringify(cache, null, 2) + "\n");
   console.log(`${league}: wrote ${cache.games.length} games through ${cache.throughDate}`);
 }

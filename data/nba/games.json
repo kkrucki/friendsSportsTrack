@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-10-24",
+  "throughDate": "2026-10-25",
   "games": [
     {
       "id": "401909088",
@@ -325,6 +325,69 @@
         "Golden State Warriors"
       ],
       "winner": "Phoenix Suns"
+    },
+    {
+      "id": "401909861",
+      "date": "2026-10-25",
+      "teams": [
+        "Utah Jazz",
+        "Los Angeles Lakers"
+      ],
+      "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909862",
+      "date": "2026-10-25",
+      "teams": [
+        "Brooklyn Nets",
+        "Indiana Pacers"
+      ],
+      "winner": "Indiana Pacers"
+    },
+    {
+      "id": "401909863",
+      "date": "2026-10-25",
+      "teams": [
+        "New York Knicks",
+        "Orlando Magic"
+      ],
+      "winner": "Orlando Magic"
+    },
+    {
+      "id": "401909864",
+      "date": "2026-10-25",
+      "teams": [
+        "Minnesota Timberwolves",
+        "Toronto Raptors"
+      ],
+      "winner": "Minnesota Timberwolves"
+    },
+    {
+      "id": "401909865",
+      "date": "2026-10-25",
+      "teams": [
+        "Oklahoma City Thunder",
+        "LA Clippers"
+      ],
+      "winner": "Oklahoma City Thunder"
+    },
+    {
+      "id": "401909866",
+      "date": "2026-10-25",
+      "teams": [
+        "Philadelphia 76ers",
+        "Detroit Pistons"
+      ],
+      "winner": "Detroit Pistons"
+    },
+    {
+      "id": "401909867",
+      "date": "2026-10-25",
+      "teams": [
+        "Sacramento Kings",
+        "Memphis Grizzlies"
+      ],
+      "winner": "Memphis Grizzlies"
     }
   ]
 }

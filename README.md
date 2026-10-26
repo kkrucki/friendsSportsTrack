@@ -4,8 +4,9 @@ A static site showing whose NBA and NFL teams are winning. Use the dropdown at t
 
 - `picks/<league>.json`: who picked which teams (names must match ESPN's names, e.g. "LA Clippers"). Keep people in the same order in every file so each person keeps their chart color.
 - `scripts/update.mjs`: pulls standings and game results from ESPN's public API into `data/<league>/`
-- `.github/workflows/update-standings.yml`: runs the script every day at 09:37 UTC (with a backup run at 11:43 UTC) and commits the result
+- `.github/workflows/update-standings.yml`: runs the script once a day at 09:37 UTC and commits the result. GitHub often runs it late, so until it has run, the page fetches any missing days from ESPN itself. Everyone always sees results through yesterday.
 - `index.html`: the page
+- `lib/espn.js`: ESPN helpers shared by the script and the page
 
 ## Run locally
 
@@ -16,7 +17,7 @@ python -m http.server 8000   # then open http://localhost:8000
 
 ## Adding a league
 
-Add it to `LEAGUES` in both `scripts/update.mjs` (ESPN sport path, e.g. `"hockey/nhl"`) and `index.html` (label and emoji), then create `picks/<league>.json`.
+Add it to `LEAGUES` in both `lib/espn.js` (ESPN sport path, e.g. `"hockey/nhl"`) and `index.html` (label and emoji), then create `picks/<league>.json`.
 
 ## Deploy (GitHub Pages)
 

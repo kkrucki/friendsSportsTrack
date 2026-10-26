@@ -1,10 +1,24 @@
 {
   "season": "2026-27",
-  "updatedAt": "2026-10-25T15:02:43.920Z",
+  "updatedAt": "2026-10-26T14:28:23.685Z",
   "teams": {
+    "New York Knicks": {
+      "abbr": "NY",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
+      "wins": 0,
+      "losses": 3,
+      "ties": 0
+    },
     "Milwaukee Bucks": {
       "abbr": "MIL",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mil.png",
+      "wins": 0,
+      "losses": 3,
+      "ties": 0
+    },
+    "Brooklyn Nets": {
+      "abbr": "BKN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
       "wins": 0,
       "losses": 3,
       "ties": 0
@@ -16,24 +30,10 @@
       "losses": 3,
       "ties": 0
     },
-    "New York Knicks": {
-      "abbr": "NY",
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ny.png",
-      "wins": 0,
-      "losses": 2,
-      "ties": 0
-    },
-    "Brooklyn Nets": {
-      "abbr": "BKN",
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bkn.png",
-      "wins": 0,
-      "losses": 2,
-      "ties": 0
-    },
     "Orlando Magic": {
       "abbr": "ORL",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/orl.png",
-      "wins": 0,
+      "wins": 1,
       "losses": 2,
       "ties": 0
     },
@@ -47,13 +47,6 @@
     "Boston Celtics": {
       "abbr": "BOS",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/bos.png",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0
-    },
-    "Indiana Pacers": {
-      "abbr": "IND",
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
       "wins": 1,
       "losses": 1,
       "ties": 0
@@ -72,6 +65,20 @@
       "losses": 1,
       "ties": 0
     },
+    "Toronto Raptors": {
+      "abbr": "TOR",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
+      "wins": 2,
+      "losses": 1,
+      "ties": 0
+    },
+    "Indiana Pacers": {
+      "abbr": "IND",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/ind.png",
+      "wins": 2,
+      "losses": 1,
+      "ties": 0
+    },
     "Charlotte Hornets": {
       "abbr": "CHA",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/cha.png",
@@ -86,23 +93,16 @@
       "losses": 1,
       "ties": 0
     },
-    "Detroit Pistons": {
-      "abbr": "DET",
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
-      "wins": 2,
-      "losses": 0,
-      "ties": 0
-    },
-    "Toronto Raptors": {
-      "abbr": "TOR",
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/tor.png",
-      "wins": 2,
-      "losses": 0,
-      "ties": 0
-    },
     "Philadelphia 76ers": {
       "abbr": "PHI",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/phi.png",
+      "wins": 3,
+      "losses": 1,
+      "ties": 0
+    },
+    "Detroit Pistons": {
+      "abbr": "DET",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/det.png",
       "wins": 3,
       "losses": 0,
       "ties": 0
@@ -125,12 +125,26 @@
       "abbr": "SAC",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sac.png",
       "wins": 0,
-      "losses": 2,
+      "losses": 3,
       "ties": 0
     },
     "San Antonio Spurs": {
       "abbr": "SA",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/sa.png",
+      "wins": 1,
+      "losses": 2,
+      "ties": 0
+    },
+    "LA Clippers": {
+      "abbr": "LAC",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
+      "wins": 1,
+      "losses": 2,
+      "ties": 0
+    },
+    "Utah Jazz": {
+      "abbr": "UTAH",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
       "wins": 1,
       "losses": 2,
       "ties": 0
@@ -142,23 +156,9 @@
       "losses": 2,
       "ties": 0
     },
-    "LA Clippers": {
-      "abbr": "LAC",
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lac.png",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0
-    },
     "Denver Nuggets": {
       "abbr": "DEN",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/den.png",
-      "wins": 1,
-      "losses": 1,
-      "ties": 0
-    },
-    "Utah Jazz": {
-      "abbr": "UTAH",
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/utah.png",
       "wins": 1,
       "losses": 1,
       "ties": 0
@@ -170,13 +170,6 @@
       "losses": 1,
       "ties": 0
     },
-    "Minnesota Timberwolves": {
-      "abbr": "MIN",
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
-      "wins": 2,
-      "losses": 0,
-      "ties": 0
-    },
     "Portland Trail Blazers": {
       "abbr": "POR",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/por.png",
@@ -184,24 +177,31 @@
       "losses": 0,
       "ties": 0
     },
-    "Los Angeles Lakers": {
-      "abbr": "LAL",
-      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
-      "wins": 2,
+    "Minnesota Timberwolves": {
+      "abbr": "MIN",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/min.png",
+      "wins": 3,
       "losses": 0,
       "ties": 0
     },
     "Oklahoma City Thunder": {
       "abbr": "OKC",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/okc.png",
-      "wins": 2,
+      "wins": 3,
+      "losses": 0,
+      "ties": 0
+    },
+    "Los Angeles Lakers": {
+      "abbr": "LAL",
+      "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png",
+      "wins": 3,
       "losses": 0,
       "ties": 0
     },
     "Memphis Grizzlies": {
       "abbr": "MEM",
       "logo": "https://a.espncdn.com/i/teamlogos/nba/500/mem.png",
-      "wins": 2,
+      "wins": 3,
       "losses": 0,
       "ties": 0
     },
