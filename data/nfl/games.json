@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-10-25",
+  "throughDate": "2026-10-26",
   "games": [
     {
       "id": "401872656",
@@ -955,6 +955,15 @@
         "Kansas City Chiefs"
       ],
       "winner": "Seattle Seahawks"
+    },
+    {
+      "id": "401873009",
+      "date": "2026-10-26",
+      "teams": [
+        "Philadelphia Eagles",
+        "Dallas Cowboys"
+      ],
+      "winner": "Dallas Cowboys"
     }
   ]
 }
