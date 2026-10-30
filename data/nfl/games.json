@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-10-28",
+  "throughDate": "2026-10-29",
   "games": [
     {
       "id": "401872656",
@@ -964,6 +964,15 @@
         "Dallas Cowboys"
       ],
       "winner": "Dallas Cowboys"
+    },
+    {
+      "id": "401873023",
+      "date": "2026-10-29",
+      "teams": [
+        "Green Bay Packers",
+        "Carolina Panthers"
+      ],
+      "winner": "Green Bay Packers"
     }
   ]
 }

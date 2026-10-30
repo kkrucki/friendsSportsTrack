@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-10-28",
+  "throughDate": "2026-10-29",
   "games": [
     {
       "id": "401909088",
@@ -613,6 +613,33 @@
         "Los Angeles Lakers"
       ],
       "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909893",
+      "date": "2026-10-29",
+      "teams": [
+        "Atlanta Hawks",
+        "Cleveland Cavaliers"
+      ],
+      "winner": "Atlanta Hawks"
+    },
+    {
+      "id": "401909894",
+      "date": "2026-10-29",
+      "teams": [
+        "New Orleans Pelicans",
+        "Sacramento Kings"
+      ],
+      "winner": "New Orleans Pelicans"
+    },
+    {
+      "id": "401909895",
+      "date": "2026-10-29",
+      "teams": [
+        "Portland Trail Blazers",
+        "Memphis Grizzlies"
+      ],
+      "winner": "Memphis Grizzlies"
     }
   ]
 }
