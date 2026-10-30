@@ -16,10 +16,10 @@
       --win: #15803d;
       --loss: #b91c1c;
       --bar: #fed7aa;
-      --s1: #2a78d6;
-      --s2: #eb6834;
-      --s3: #1baf7a;
-      --s4: #eda100;
+      --c-blue: #2a78d6;
+      --c-red: #e34948;
+      --c-green: #008300;
+      --c-yellow: #eda100;
     }
     @media (prefers-color-scheme: dark) {
       :root {
@@ -32,10 +32,10 @@
         --win: #4ade80;
         --loss: #f87171;
         --bar: #7c2d12;
-        --s1: #3987e5;
-        --s2: #d95926;
-        --s3: #199e70;
-        --s4: #c98500;
+        --c-blue: #3987e5;
+        --c-red: #d94452;
+        --c-green: #008300;
+        --c-yellow: #c98500;
       }
     }
     * { box-sizing: border-box; }
@@ -100,6 +100,7 @@
     .rec .w { color: var(--win); }
     .rec .l { color: var(--loss); }
     .rec .t { color: var(--muted); }
+    .teams .cup { font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
 
     .chart-card { padding: 16px; }
     .legend { display: flex; flex-wrap: wrap; gap: 4px 16px; margin: 0 0 8px; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
@@ -172,12 +173,16 @@
   </main>
 
   <script type="module">
-    import { LEAGUES as ESPN_PATHS, etDate, addDays, fetchGames, mergeGames, recordsFromGames } from "./lib/espn.js";
+    import { LEAGUES as ESPN_PATHS, etDate, addDays, fetchGames, mergeGames, recordsFromGames, pointsFor, countsInRecord } from "./lib/espn.js";
 
     const LEAGUES = {
-      nba: { label: "NBA", emoji: "🏀" },
+      nba: { label: "NBA", emoji: "🏀", note: "NBA Cup wins: 2 pts (QF 3, SF 4, final 5)" },
       nfl: { label: "NFL", emoji: "🏈" },
     };
+
+    // Each person's chart color, the same in every league.
+    const PERSON_COLORS = { KRUCKI: "blue", JIM: "red", KUNKEL: "green", ANDREW: "yellow" };
+    const personColor = (name, i) => `var(--c-${PERSON_COLORS[name] ?? ["blue", "red", "green", "yellow"][i % 4]})`;
 
     const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[c]);
     const recText = (w, l, t) => `${w}–${l}${t ? `–${t}` : ""}`;
@@ -232,16 +237,19 @@
       // Records come from game results so everything shows the same "through yesterday" snapshot;
       // standings.json supplies logos (and records only if games.json is missing).
       const records = games ? recordsFromGames(games.games) : null;
-      const teamRecord = (t) => (records ? { wins: 0, losses: 0, ties: 0, ...records[t] } : standings.teams[t]);
+      const teamRecord = (t) => (records
+        ? { wins: 0, losses: 0, ties: 0, cupWins: 0, points: 0, ...records[t] }
+        : { cupWins: 0, ...standings.teams[t], points: standings.teams[t]?.wins ?? 0 });
 
-      // One point per win; ties broken by fewer losses.
+      // One point per win (two for an NBA Cup win); ties broken by fewer losses.
       const owners = Object.entries(picks).map(([name, teamNames]) => {
         const teams = teamNames
           .map((t) => ({ name: t, wins: 0, losses: 0, ties: 0, ...standings.teams[t], ...teamRecord(t) }))
-          .sort((a, b) => b.wins - a.wins || a.losses - b.losses || a.name.localeCompare(b.name));
+          .sort((a, b) => b.points - a.points || a.losses - b.losses || a.name.localeCompare(b.name));
         const sum = (key) => teams.reduce((n, t) => n + t[key], 0);
-        return { name, teams, wins: sum("wins"), losses: sum("losses"), ties: sum("ties") };
-      }).sort((a, b) => b.wins - a.wins || a.losses - b.losses);
+        return { name, teams, wins: sum("wins"), losses: sum("losses"), ties: sum("ties"), cupWins: sum("cupWins"), points: sum("points") };
+      }).sort((a, b) => b.points - a.points || a.losses - b.losses);
+      const cupNote = (n) => (n ? ` · ${n} Cup ${n === 1 ? "win" : "wins"}` : "");
 
       const hasGames = !!games?.games.length;
       const h2h = hasGames ? headToHead(picks, games) : null;
@@ -252,32 +260,33 @@
           }).join("")}</div>`
         : "";
 
-      const maxWins = Math.max(1, ...owners.map((o) => o.wins));
+      const maxPoints = Math.max(1, ...owners.map((o) => o.points));
       let rank = 0;
       document.getElementById("board").innerHTML = owners.map((o, i) => {
         const prev = owners[i - 1];
-        if (!prev || prev.wins !== o.wins || prev.losses !== o.losses) rank = i + 1;
+        if (!prev || prev.points !== o.points || prev.losses !== o.losses) rank = i + 1;
         return `
           <li class="${rank === 1 ? "leader" : ""}">
             <div class="rank">${rank}</div>
             <div>
               <div class="name">${esc(o.name)}${rank === 1 ? " 🔥" : ""}</div>
-              <div class="meta">${recText(o.wins, o.losses, o.ties)} · ${pct(o.wins, o.losses, o.ties)}</div>
-              <div class="bar"><span style="width:${(o.wins / maxWins) * 100}%"></span></div>
+              <div class="meta">${recText(o.wins, o.losses, o.ties)} · ${pct(o.wins, o.losses, o.ties)}${cupNote(o.cupWins)}</div>
+              <div class="bar"><span style="width:${(o.points / maxPoints) * 100}%"></span></div>
               ${vsLine(o.name)}
             </div>
-            <div class="pts">${o.wins}<small>${o.wins === 1 ? "pt" : "pts"}</small></div>
+            <div class="pts">${o.points}<small>${o.points === 1 ? "pt" : "pts"}</small></div>
           </li>`;
       }).join("");
 
       document.getElementById("owners").innerHTML = owners.map((o) => `
         <section class="owner card">
-          <h3>${esc(o.name)} <span>${o.wins} pts · ${recText(o.wins, o.losses, o.ties)}</span></h3>
+          <h3>${esc(o.name)} <span>${o.points} pts · ${recText(o.wins, o.losses, o.ties)}</span></h3>
           <ul class="teams">
             ${o.teams.map((t) => `
               <li>
                 ${t.logo ? `<img src="${esc(t.logo)}" alt="" loading="lazy">` : ""}
                 <span class="team">${esc(t.name)}</span>
+                ${t.cupWins ? `<span class="cup" title="NBA Cup wins (2 points in group play, 3 QF, 4 SF, 5 final)">🏆 ${t.cupWins}</span>` : ""}
                 <span class="rec">${record(t.wins, t.losses, t.ties)}</span>
               </li>`).join("")}
           </ul>
@@ -286,7 +295,7 @@
       const asOf = games
         ? `Results through ${new Date(games.throughDate + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })}`
         : `Updated ${new Date(standings.updatedAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
-      document.getElementById("updated").textContent = `${standings.season ?? ""} season · ${asOf}`;
+      document.getElementById("updated").textContent = [`${standings.season ?? ""} season`, asOf, LEAGUES[league].note].filter(Boolean).join(" · ");
 
       document.getElementById("history").hidden = !hasGames;
       if (hasGames) renderHistory(picks, games);
@@ -307,7 +316,7 @@
       const h2h = Object.fromEntries(names.map((a) => [a, Object.fromEntries(names.map((b) => [b, { w: 0, l: 0, t: 0 }]))]));
       for (const g of games.games) {
         const [a, b] = g.teams.map((t) => ownerOf[t]);
-        if (!a || !b || a === b) continue;
+        if (!a || !b || a === b || !countsInRecord(g)) continue;
         if (g.winner === null) { h2h[a][b].t++; h2h[b][a].t++; }
         else if (g.winner === g.teams[0]) { h2h[a][b].w++; h2h[b][a].l++; }
         else { h2h[a][b].l++; h2h[b][a].w++; }
@@ -327,7 +336,7 @@
         const W = wrap.clientWidth;
         if (!days.length || !W) return;
         const pw = W - m.left - m.right, ph = H - m.top - m.bottom;
-        const max = Math.max(1, ...series.map((s) => s.w.at(-1)));
+        const max = Math.max(1, ...series.map((s) => s.p.at(-1)));
         const step = [1, 2, 5, 10, 20, 25, 50, 100].find((s) => max / s <= 5);
         const yMax = Math.ceil(max / step) * step;
         const x = (i) => m.left + (days.length > 1 ? (i * pw) / (days.length - 1) : pw / 2);
@@ -350,20 +359,20 @@
         }
 
         for (const s of series) {
-          const d = s.w.map((v, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join("");
+          const d = s.p.map((v, i) => `${i ? "L" : "M"}${x(i).toFixed(1)},${y(v).toFixed(1)}`).join("");
           svg.append(el("path", { d, fill: "none", stroke: s.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round" }));
         }
 
         // End labels: name + current points, nudged apart so they never overlap.
-        const ends = series.map((s) => ({ s, y: y(s.w.at(-1)) })).sort((a, b) => a.y - b.y || a.s.l.at(-1) - b.s.l.at(-1));
+        const ends = series.map((s) => ({ s, y: y(s.p.at(-1)) })).sort((a, b) => a.y - b.y || a.s.l.at(-1) - b.s.l.at(-1));
         for (let i = 1; i < ends.length; i++) ends[i].y = Math.max(ends[i].y, ends[i - 1].y + 15);
         const overflow = ends.at(-1).y - (m.top + ph);
         if (overflow > 0) for (const e of ends) e.y -= overflow;
         for (const e of ends) {
           const last = days.length - 1;
-          svg.append(el("circle", { cx: x(last), cy: y(e.s.w.at(-1)), r: 4, fill: e.s.color, stroke: "var(--card)", "stroke-width": 2 }));
+          svg.append(el("circle", { cx: x(last), cy: y(e.s.p.at(-1)), r: 4, fill: e.s.color, stroke: "var(--card)", "stroke-width": 2 }));
           const label = el("text", { class: "end-label", x: x(last) + 10, y: e.y + 4 }, e.s.name + " ");
-          label.append(el("tspan", {}, e.s.w.at(-1)));
+          label.append(el("tspan", {}, e.s.p.at(-1)));
           svg.append(label);
         }
 
@@ -378,11 +387,11 @@
         const { x, y, W } = geom;
         const cursor = svg.querySelector("#cursor");
         cursor.replaceChildren(el("line", { x1: x(i), x2: x(i), y1: m.top, y2: H - m.bottom, stroke: "var(--muted)", "stroke-width": 1 }));
-        for (const s of series) cursor.append(el("circle", { cx: x(i), cy: y(s.w[i]), r: 4, fill: s.color, stroke: "var(--card)", "stroke-width": 2 }));
+        for (const s of series) cursor.append(el("circle", { cx: x(i), cy: y(s.p[i]), r: 4, fill: s.color, stroke: "var(--card)", "stroke-width": 2 }));
 
-        const rows = [...series].sort((a, b) => b.w[i] - a.w[i] || a.l[i] - b.l[i]).map((s) => {
+        const rows = [...series].sort((a, b) => b.p[i] - a.p[i] || a.l[i] - b.l[i]).map((s) => {
           const row = el("div", { class: "row" });
-          row.append(el("i", { style: `background:${s.color}` }), el("b", {}, s.w[i]), document.createTextNode(s.name + " "), el("span", {}, recText(s.w[i], s.l[i], s.t[i])));
+          row.append(el("i", { style: `background:${s.color}` }), el("b", {}, s.p[i]), document.createTextNode(s.name + " "), el("span", {}, recText(s.w[i], s.l[i], s.t[i])));
           return row;
         });
         tooltip.replaceChildren(el("div", { class: "date" }, fmtDay(days[i])), ...rows);
@@ -426,11 +435,11 @@
     function renderHistory(picks, games) {
       const ownerOf = ownersByTeam(picks);
 
-      // Colors follow the person (picks file order), never their rank.
-      const series = Object.keys(picks).map((name, i) => ({ name, color: `var(--s${(i % 4) + 1})`, w: [], l: [], t: [] }));
+      // Colors follow the person, never their rank. p = points, w/l/t = record.
+      const series = Object.keys(picks).map((name, i) => ({ name, color: personColor(name, i), p: [], w: [], l: [], t: [] }));
       const days = [];
       for (let d = games.games[0].date; d <= games.throughDate; d = addDays(d, 1)) days.push(d);
-      const tally = Object.fromEntries(series.map((s) => [s.name, { w: 0, l: 0, t: 0 }]));
+      const tally = Object.fromEntries(series.map((s) => [s.name, { p: 0, w: 0, l: 0, t: 0 }]));
       let gi = 0;
       for (const day of days) {
         for (; gi < games.games.length && games.games[gi].date === day; gi++) {
@@ -438,10 +447,11 @@
           for (const team of g.teams) {
             const owner = ownerOf[team];
             if (!owner) continue;
-            tally[owner][g.winner === null ? "t" : g.winner === team ? "w" : "l"]++;
+            if (countsInRecord(g)) tally[owner][g.winner === null ? "t" : g.winner === team ? "w" : "l"]++;
+            tally[owner].p += pointsFor(g, team);
           }
         }
-        for (const s of series) { s.w.push(tally[s.name].w); s.l.push(tally[s.name].l); s.t.push(tally[s.name].t); }
+        for (const s of series) for (const k of ["p", "w", "l", "t"]) s[k].push(tally[s.name][k]);
       }
 
       document.getElementById("history").hidden = false;
@@ -459,7 +469,7 @@
       const tbody = el("tbody");
       for (let i = days.length - 1; i >= 0; i--) {
         const tr = el("tr");
-        tr.append(el("td", {}, fmtDay(days[i])), ...series.map((s) => el("td", {}, `${s.w[i]} (${recText(s.w[i], s.l[i], s.t[i])})`)));
+        tr.append(el("td", {}, fmtDay(days[i])), ...series.map((s) => el("td", {}, `${s.p[i]} (${recText(s.w[i], s.l[i], s.t[i])})`)));
         tbody.append(tr);
       }
       document.getElementById("history-table").replaceChildren(thead, tbody);

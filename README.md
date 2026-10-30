@@ -1,6 +1,6 @@
 # Picks Tracker
 
-A static site showing whose NBA and NFL teams are winning. Use the dropdown at the top to switch leagues, or link straight to one with `?league=nfl`. Each team win counts as 1 point. If two people have the same points, the one with fewer losses ranks higher.
+A static site showing whose NBA and NFL teams are winning. Use the dropdown at the top to switch leagues, or link straight to one with `?league=nfl`. Each team win counts as 1 point, and NBA Cup wins are worth more each round: 2 points in group play, 3 in the quarterfinals, 4 in the semifinals and 5 for winning the championship game. The championship game isn't part of W–L records or head-to-head, same as in the NBA standings. If two people have the same points, the one with fewer losses ranks higher.
 
 - `picks/<league>.json`: who picked which teams (names must match ESPN's names, e.g. "LA Clippers"). Keep people in the same order in every file so each person keeps their chart color.
 - `scripts/update.mjs`: pulls standings and game results from ESPN's public API into `data/<league>/`
