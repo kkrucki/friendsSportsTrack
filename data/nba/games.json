@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-10-29",
+  "throughDate": "2026-10-30",
   "games": [
     {
       "id": "401909088",
@@ -640,6 +640,106 @@
         "Memphis Grizzlies"
       ],
       "winner": "Memphis Grizzlies"
+    },
+    {
+      "id": "401909277",
+      "date": "2026-10-30",
+      "teams": [
+        "Washington Wizards",
+        "Charlotte Hornets"
+      ],
+      "winner": "Washington Wizards",
+      "cup": "group"
+    },
+    {
+      "id": "401909278",
+      "date": "2026-10-30",
+      "teams": [
+        "Boston Celtics",
+        "Chicago Bulls"
+      ],
+      "winner": "Boston Celtics",
+      "cup": "group"
+    },
+    {
+      "id": "401909279",
+      "date": "2026-10-30",
+      "teams": [
+        "Brooklyn Nets",
+        "Detroit Pistons"
+      ],
+      "winner": "Detroit Pistons",
+      "cup": "group"
+    },
+    {
+      "id": "401909280",
+      "date": "2026-10-30",
+      "teams": [
+        "Philadelphia 76ers",
+        "New York Knicks"
+      ],
+      "winner": "Philadelphia 76ers",
+      "cup": "group"
+    },
+    {
+      "id": "401909281",
+      "date": "2026-10-30",
+      "teams": [
+        "Toronto Raptors",
+        "Orlando Magic"
+      ],
+      "winner": "Orlando Magic",
+      "cup": "group"
+    },
+    {
+      "id": "401909282",
+      "date": "2026-10-30",
+      "teams": [
+        "Miami Heat",
+        "Indiana Pacers"
+      ],
+      "winner": "Miami Heat",
+      "cup": "group"
+    },
+    {
+      "id": "401909283",
+      "date": "2026-10-30",
+      "teams": [
+        "Dallas Mavericks",
+        "Houston Rockets"
+      ],
+      "winner": "Dallas Mavericks",
+      "cup": "group"
+    },
+    {
+      "id": "401909284",
+      "date": "2026-10-30",
+      "teams": [
+        "Minnesota Timberwolves",
+        "LA Clippers"
+      ],
+      "winner": "Minnesota Timberwolves",
+      "cup": "group"
+    },
+    {
+      "id": "401909285",
+      "date": "2026-10-30",
+      "teams": [
+        "Golden State Warriors",
+        "Los Angeles Lakers"
+      ],
+      "winner": "Golden State Warriors",
+      "cup": "group"
+    },
+    {
+      "id": "401909286",
+      "date": "2026-10-30",
+      "teams": [
+        "Phoenix Suns",
+        "Denver Nuggets"
+      ],
+      "winner": "Denver Nuggets",
+      "cup": "group"
     }
   ]
 }
