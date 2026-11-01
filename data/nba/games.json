@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-10-30",
+  "throughDate": "2026-10-31",
   "games": [
     {
       "id": "401909088",
@@ -740,6 +740,69 @@
       ],
       "winner": "Denver Nuggets",
       "cup": "group"
+    },
+    {
+      "id": "401909896",
+      "date": "2026-10-31",
+      "teams": [
+        "Utah Jazz",
+        "Portland Trail Blazers"
+      ],
+      "winner": "Portland Trail Blazers"
+    },
+    {
+      "id": "401909897",
+      "date": "2026-10-31",
+      "teams": [
+        "Charlotte Hornets",
+        "Philadelphia 76ers"
+      ],
+      "winner": "Philadelphia 76ers"
+    },
+    {
+      "id": "401909898",
+      "date": "2026-10-31",
+      "teams": [
+        "New Orleans Pelicans",
+        "Atlanta Hawks"
+      ],
+      "winner": "New Orleans Pelicans"
+    },
+    {
+      "id": "401909899",
+      "date": "2026-10-31",
+      "teams": [
+        "Memphis Grizzlies",
+        "Sacramento Kings"
+      ],
+      "winner": "Memphis Grizzlies"
+    },
+    {
+      "id": "401909900",
+      "date": "2026-10-31",
+      "teams": [
+        "Milwaukee Bucks",
+        "Cleveland Cavaliers"
+      ],
+      "winner": "Cleveland Cavaliers"
+    },
+    {
+      "id": "401909901",
+      "date": "2026-10-31",
+      "teams": [
+        "San Antonio Spurs",
+        "Minnesota Timberwolves"
+      ],
+      "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909902",
+      "date": "2026-10-31",
+      "teams": [
+        "Houston Rockets",
+        "Oklahoma City Thunder"
+      ],
+      "winner": "Houston Rockets"
     }
   ]
 }
