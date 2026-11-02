@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-10-31",
+  "throughDate": "2026-11-01",
   "games": [
     {
       "id": "401872656",
@@ -973,6 +973,114 @@
         "Carolina Panthers"
       ],
       "winner": "Green Bay Packers"
+    },
+    {
+      "id": "401873024",
+      "date": "2026-11-01",
+      "teams": [
+        "Dallas Cowboys",
+        "Arizona Cardinals"
+      ],
+      "winner": "Arizona Cardinals"
+    },
+    {
+      "id": "401873025",
+      "date": "2026-11-01",
+      "teams": [
+        "Tampa Bay Buccaneers",
+        "Atlanta Falcons"
+      ],
+      "winner": "Tampa Bay Buccaneers"
+    },
+    {
+      "id": "401873026",
+      "date": "2026-11-01",
+      "teams": [
+        "Buffalo Bills",
+        "Baltimore Ravens"
+      ],
+      "winner": "Buffalo Bills"
+    },
+    {
+      "id": "401873027",
+      "date": "2026-11-01",
+      "teams": [
+        "Pittsburgh Steelers",
+        "Cleveland Browns"
+      ],
+      "winner": "Pittsburgh Steelers"
+    },
+    {
+      "id": "401873028",
+      "date": "2026-11-01",
+      "teams": [
+        "Jacksonville Jaguars",
+        "Indianapolis Colts"
+      ],
+      "winner": "Jacksonville Jaguars"
+    },
+    {
+      "id": "401873029",
+      "date": "2026-11-01",
+      "teams": [
+        "New York Jets",
+        "Las Vegas Raiders"
+      ],
+      "winner": "Las Vegas Raiders"
+    },
+    {
+      "id": "401873030",
+      "date": "2026-11-01",
+      "teams": [
+        "Detroit Lions",
+        "Minnesota Vikings"
+      ],
+      "winner": "Detroit Lions"
+    },
+    {
+      "id": "401873031",
+      "date": "2026-11-01",
+      "teams": [
+        "Cincinnati Bengals",
+        "Tennessee Titans"
+      ],
+      "winner": "Cincinnati Bengals"
+    },
+    {
+      "id": "401873032",
+      "date": "2026-11-01",
+      "teams": [
+        "Los Angeles Rams",
+        "Los Angeles Chargers"
+      ],
+      "winner": "Los Angeles Rams"
+    },
+    {
+      "id": "401873033",
+      "date": "2026-11-01",
+      "teams": [
+        "Denver Broncos",
+        "Kansas City Chiefs"
+      ],
+      "winner": "Denver Broncos"
+    },
+    {
+      "id": "401873034",
+      "date": "2026-11-01",
+      "teams": [
+        "Miami Dolphins",
+        "New England Patriots"
+      ],
+      "winner": "New England Patriots"
+    },
+    {
+      "id": "401873035",
+      "date": "2026-11-01",
+      "teams": [
+        "Washington Commanders",
+        "Philadelphia Eagles"
+      ],
+      "winner": "Washington Commanders"
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-10-31",
+  "throughDate": "2026-11-01",
   "games": [
     {
       "id": "401909088",
@@ -803,6 +803,42 @@
         "Oklahoma City Thunder"
       ],
       "winner": "Houston Rockets"
+    },
+    {
+      "id": "401909903",
+      "date": "2026-11-01",
+      "teams": [
+        "Orlando Magic",
+        "Boston Celtics"
+      ],
+      "winner": "Boston Celtics"
+    },
+    {
+      "id": "401909904",
+      "date": "2026-11-01",
+      "teams": [
+        "Indiana Pacers",
+        "Brooklyn Nets"
+      ],
+      "winner": "Brooklyn Nets"
+    },
+    {
+      "id": "401909905",
+      "date": "2026-11-01",
+      "teams": [
+        "Golden State Warriors",
+        "LA Clippers"
+      ],
+      "winner": "Golden State Warriors"
+    },
+    {
+      "id": "401909906",
+      "date": "2026-11-01",
+      "teams": [
+        "Los Angeles Lakers",
+        "Toronto Raptors"
+      ],
+      "winner": "Los Angeles Lakers"
     }
   ]
 }
