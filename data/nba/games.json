@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-01",
+  "throughDate": "2026-11-02",
   "games": [
     {
       "id": "401909088",
@@ -837,6 +837,141 @@
       "teams": [
         "Los Angeles Lakers",
         "Toronto Raptors"
+      ],
+      "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909907",
+      "date": "2026-11-02",
+      "teams": [
+        "Cleveland Cavaliers",
+        "Oklahoma City Thunder"
+      ],
+      "winner": "Oklahoma City Thunder"
+    },
+    {
+      "id": "401909908",
+      "date": "2026-11-02",
+      "teams": [
+        "Charlotte Hornets",
+        "Detroit Pistons"
+      ],
+      "winner": "Detroit Pistons"
+    },
+    {
+      "id": "401909909",
+      "date": "2026-11-02",
+      "teams": [
+        "Indiana Pacers",
+        "Atlanta Hawks"
+      ],
+      "winner": "Atlanta Hawks"
+    },
+    {
+      "id": "401909910",
+      "date": "2026-11-02",
+      "teams": [
+        "New York Knicks",
+        "Brooklyn Nets"
+      ],
+      "winner": "New York Knicks"
+    },
+    {
+      "id": "401909911",
+      "date": "2026-11-02",
+      "teams": [
+        "Orlando Magic",
+        "Washington Wizards"
+      ],
+      "winner": "Washington Wizards"
+    },
+    {
+      "id": "401909912",
+      "date": "2026-11-02",
+      "teams": [
+        "Philadelphia 76ers",
+        "Chicago Bulls"
+      ],
+      "winner": "Philadelphia 76ers"
+    },
+    {
+      "id": "401909913",
+      "date": "2026-11-02",
+      "teams": [
+        "Dallas Mavericks",
+        "Sacramento Kings"
+      ],
+      "winner": "Sacramento Kings"
+    },
+    {
+      "id": "401909914",
+      "date": "2026-11-02",
+      "teams": [
+        "Memphis Grizzlies",
+        "New Orleans Pelicans"
+      ],
+      "winner": "New Orleans Pelicans"
+    },
+    {
+      "id": "401909915",
+      "date": "2026-11-02",
+      "teams": [
+        "Minnesota Timberwolves",
+        "Milwaukee Bucks"
+      ],
+      "winner": "Minnesota Timberwolves"
+    },
+    {
+      "id": "401909916",
+      "date": "2026-11-02",
+      "teams": [
+        "Houston Rockets",
+        "Boston Celtics"
+      ],
+      "winner": "Houston Rockets"
+    },
+    {
+      "id": "401909917",
+      "date": "2026-11-02",
+      "teams": [
+        "San Antonio Spurs",
+        "Utah Jazz"
+      ],
+      "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909918",
+      "date": "2026-11-02",
+      "teams": [
+        "Denver Nuggets",
+        "Portland Trail Blazers"
+      ],
+      "winner": "Portland Trail Blazers"
+    },
+    {
+      "id": "401909919",
+      "date": "2026-11-02",
+      "teams": [
+        "Golden State Warriors",
+        "Phoenix Suns"
+      ],
+      "winner": "Golden State Warriors"
+    },
+    {
+      "id": "401909920",
+      "date": "2026-11-02",
+      "teams": [
+        "LA Clippers",
+        "Toronto Raptors"
+      ],
+      "winner": "Toronto Raptors"
+    },
+    {
+      "id": "401909921",
+      "date": "2026-11-02",
+      "teams": [
+        "Los Angeles Lakers",
+        "Miami Heat"
       ],
       "winner": "Los Angeles Lakers"
     }
