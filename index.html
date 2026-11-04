@@ -49,7 +49,7 @@
     .title-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
     header h1 { margin: 0; font-size: 28px; letter-spacing: -0.02em; }
     header p { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
-    #league {
+    .pill-select {
       appearance: none;
       font: inherit; font-size: 15px; font-weight: 600;
       color: var(--text); background-color: var(--card);
@@ -58,8 +58,26 @@
       background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2.5 4.5 6 8l3.5-3.5' fill='none' stroke='%2378716c' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/></svg>");
       background-repeat: no-repeat; background-position: right 12px center;
     }
-    #league:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .pill-select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .pill-select.small { font-size: 13px; padding: 4px 30px 4px 12px; background-position: right 10px center; }
     h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted); margin: 40px 0 12px; }
+    .section-head { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin: 40px 0 12px; }
+    .section-head h2 { margin: 0; }
+
+    .owner-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 5px; flex: none; }
+    .day-summary { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0 0 12px; font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .day-summary span { display: inline-flex; align-items: center; gap: 4px; }
+    .day-summary b { color: var(--text); }
+    .games { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr)); gap: 10px; }
+    .game { padding: 10px 12px; }
+    .game-meta { display: flex; justify-content: space-between; gap: 8px; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+    .side { display: grid; grid-template-columns: 22px 1fr auto 2.4em; align-items: center; gap: 8px; padding: 3px 0; color: var(--muted); font-size: 15px; }
+    .side img { width: 22px; height: 22px; object-fit: contain; }
+    .side .team { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+    .side.win { color: var(--text); font-weight: 600; }
+    .side .score { font-variant-numeric: tabular-nums; text-align: right; }
+    .side .tag { display: inline-flex; align-items: center; font-size: 11px; font-weight: 600; letter-spacing: 0.04em; color: var(--muted); white-space: nowrap; }
+    .side .tag .gain { color: var(--win); margin-left: 5px; font-variant-numeric: tabular-nums; }
     main.loading > :not(header) { opacity: 0.5; transition: opacity 0.15s; }
 
     .card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; }
@@ -142,7 +160,7 @@
     <header>
       <div class="title-row">
         <h1 id="title">Picks Tracker</h1>
-        <select id="league" aria-label="League">
+        <select id="league" class="pill-select" aria-label="League">
           <option value="nba">🏀 NBA</option>
           <option value="nfl">🏈 NFL</option>
         </select>
@@ -152,6 +170,15 @@
 
     <h2>Leaderboard</h2>
     <ol class="board card" id="board"></ol>
+
+    <section id="daily" hidden>
+      <div class="section-head">
+        <h2>Results</h2>
+        <select id="day" class="pill-select small" aria-label="Games to show"></select>
+      </div>
+      <div class="day-summary" id="day-summary"></div>
+      <div class="games" id="games"></div>
+    </section>
 
     <section id="history" hidden>
       <h2>Points over time</h2>
@@ -176,8 +203,8 @@
     import { LEAGUES as ESPN_PATHS, etDate, addDays, fetchGames, mergeGames, recordsFromGames, pointsFor, countsInRecord } from "./lib/espn.js";
 
     const LEAGUES = {
-      nba: { label: "NBA", emoji: "🏀", note: "NBA Cup wins: 2 pts (QF 3, SF 4, final 5)" },
-      nfl: { label: "NFL", emoji: "🏈" },
+      nba: { label: "NBA", emoji: "🏀", note: "NBA Cup wins: 2 pts (QF 3, SF 4, final 5)", results: "date" },
+      nfl: { label: "NFL", emoji: "🏈", results: "week" },
     };
 
     // Each person's chart color, the same in every league.
@@ -293,19 +320,84 @@
         </section>`).join("");
 
       const asOf = games
-        ? `Results through ${new Date(games.throughDate + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" })}`
+        ? `Results through ${fmtLongDay(games.throughDate)}`
         : `Updated ${new Date(standings.updatedAt).toLocaleString(undefined, { dateStyle: "medium", timeStyle: "short" })}`;
       document.getElementById("updated").textContent = [`${standings.season ?? ""} season`, asOf, LEAGUES[league].note].filter(Boolean).join(" · ");
 
+      const results = hasGames ? LEAGUES[league].results : null;
+      document.getElementById("daily").hidden = !results;
+      if (results) renderResults(picks, games, standings, results);
       document.getElementById("history").hidden = !hasGames;
       if (hasGames) renderHistory(picks, games);
     }
+
+    const fmtLongDay = (iso) => new Date(iso + "T12:00:00").toLocaleDateString(undefined, { weekday: "short", month: "short", day: "numeric" });
 
     const ownersByTeam = (picks) => {
       const ownerOf = {};
       for (const [owner, teams] of Object.entries(picks)) for (const t of teams) ownerOf[t] = owner;
       return ownerOf;
     };
+
+    // Running per-person totals: p = points, w/l/t = record.
+    const newTally = (picks) => Object.fromEntries(Object.keys(picks).map((n) => [n, { p: 0, w: 0, l: 0, t: 0 }]));
+    function addGame(tally, g, ownerOf) {
+      for (const team of g.teams) {
+        const owner = ownerOf[team];
+        if (!owner) continue;
+        if (countsInRecord(g)) tally[owner][g.winner === null ? "t" : g.winner === team ? "w" : "l"]++;
+        tally[owner].p += pointsFor(g, team);
+      }
+    }
+
+    // Scores for one day (NBA) or one week (NFL), each team tagged with a dot in its owner's
+    // chart color plus their name, and the points the win earned.
+    const CUP_LABELS = { group: "NBA Cup", qf: "NBA Cup · Quarterfinal", sf: "NBA Cup · Semifinal", final: "NBA Cup · Final" };
+    function renderResults(picks, games, standings, by) {
+      const ownerOf = ownersByTeam(picks);
+      const colorOf = Object.fromEntries(Object.keys(picks).map((n, i) => [n, personColor(n, i)]));
+      const keyOf = (g) => String(by === "week" ? g.week : g.date);
+      const groups = new Map();
+      for (const g of games.games) groups.set(keyOf(g), [...(groups.get(keyOf(g)) ?? []), g]);
+      const keys = [...groups.keys()].reverse(); // newest first
+      const label = (k) => `${by === "week" ? `Week ${k}` : fmtLongDay(k)} · ${groups.get(k).length} games`;
+      const select = document.getElementById("day");
+      select.innerHTML = keys.map((k) => `<option value="${esc(k)}">${esc(label(k))}</option>`).join("");
+
+      const dot = (owner) => `<i class="owner-dot" style="background:${colorOf[owner]}"></i>`;
+      const side = (g, i) => {
+        const team = g.teams[i], owner = ownerOf[team], info = standings.teams[team] ?? {};
+        const gain = pointsFor(g, team);
+        return `
+          <div class="side${g.winner === team ? " win" : ""}">
+            ${info.logo ? `<img src="${esc(info.logo)}" alt="" loading="lazy">` : "<span></span>"}
+            <span class="team">${esc(info.short ?? team)}</span>
+            <span class="tag">${owner ? `${dot(owner)}${esc(owner)}${gain ? `<span class="gain">+${gain}</span>` : ""}` : ""}</span>
+            <span class="score">${g.scores?.[i] ?? ""}</span>
+          </div>`;
+      };
+
+      const show = (key) => {
+        const shown = groups.get(key);
+        const tally = newTally(picks);
+        for (const g of shown) addGame(tally, g, ownerOf);
+        document.getElementById("day-summary").innerHTML = Object.entries(tally)
+          .sort(([, a], [, b]) => b.p - a.p || a.l - b.l)
+          .map(([n, r]) => `<span>${dot(n)}<b>${esc(n)} +${r.p}</b> ${recText(r.w, r.l, r.t)}</span>`)
+          .join("");
+        document.getElementById("games").innerHTML = shown.map((g) => {
+          const away = g.teams.findIndex((t) => t !== g.home); // away team on top
+          const status = [by === "week" && fmtLongDay(g.date), g.detail ?? "Final"].filter(Boolean).join(" · ");
+          return `
+            <div class="game card">
+              <div class="game-meta"><span>${esc(status)}</span><span>${g.cup ? CUP_LABELS[g.cup] : ""}</span></div>
+              ${side(g, away)}${side(g, 1 - away)}
+            </div>`;
+        }).join("");
+      };
+      select.onchange = () => show(select.value);
+      show(keys[0]);
+    }
 
     // Every game between two people's teams counts toward their head-to-head record.
     // Games where both teams belong to the same person are skipped.
@@ -439,18 +531,10 @@
       const series = Object.keys(picks).map((name, i) => ({ name, color: personColor(name, i), p: [], w: [], l: [], t: [] }));
       const days = [];
       for (let d = games.games[0].date; d <= games.throughDate; d = addDays(d, 1)) days.push(d);
-      const tally = Object.fromEntries(series.map((s) => [s.name, { p: 0, w: 0, l: 0, t: 0 }]));
+      const tally = newTally(picks);
       let gi = 0;
       for (const day of days) {
-        for (; gi < games.games.length && games.games[gi].date === day; gi++) {
-          const g = games.games[gi];
-          for (const team of g.teams) {
-            const owner = ownerOf[team];
-            if (!owner) continue;
-            if (countsInRecord(g)) tally[owner][g.winner === null ? "t" : g.winner === team ? "w" : "l"]++;
-            tally[owner].p += pointsFor(g, team);
-          }
-        }
+        for (; gi < games.games.length && games.games[gi].date === day; gi++) addGame(tally, games.games[gi], ownerOf);
         for (const s of series) for (const k of ["p", "w", "l", "t"]) s[k].push(tally[s.name][k]);
       }
 
