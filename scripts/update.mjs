@@ -16,6 +16,7 @@ for (const [league, path] of Object.entries(LEAGUES)) {
       const stat = (name) => entry.stats.find((s) => s.name === name)?.value ?? 0;
       teams[entry.team.displayName] = {
         abbr: entry.team.abbreviation,
+        short: entry.team.shortDisplayName,
         logo: entry.team.logos?.[0]?.href ?? null,
         wins: stat("wins"),
         losses: stat("losses"),

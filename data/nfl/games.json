@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-02",
+  "throughDate": "2026-11-03",
   "games": [
     {
       "id": "401872656",
@@ -9,7 +9,13 @@
         "Seattle Seahawks",
         "New England Patriots"
       ],
-      "winner": "Seattle Seahawks"
+      "scores": [
+        13,
+        10
+      ],
+      "home": "Seattle Seahawks",
+      "winner": "Seattle Seahawks",
+      "week": 1
     },
     {
       "id": "401872657",
@@ -18,7 +24,13 @@
         "Los Angeles Rams",
         "San Francisco 49ers"
       ],
-      "winner": "San Francisco 49ers"
+      "scores": [
+        7,
+        27
+      ],
+      "home": "Los Angeles Rams",
+      "winner": "San Francisco 49ers",
+      "week": 1
     },
     {
       "id": "401872658",
@@ -27,7 +39,13 @@
         "Pittsburgh Steelers",
         "Atlanta Falcons"
       ],
-      "winner": "Pittsburgh Steelers"
+      "scores": [
+        20,
+        13
+      ],
+      "home": "Pittsburgh Steelers",
+      "winner": "Pittsburgh Steelers",
+      "week": 1
     },
     {
       "id": "401872659",
@@ -36,7 +54,13 @@
         "Indianapolis Colts",
         "Baltimore Ravens"
       ],
-      "winner": "Baltimore Ravens"
+      "scores": [
+        23,
+        41
+      ],
+      "home": "Indianapolis Colts",
+      "winner": "Baltimore Ravens",
+      "week": 1
     },
     {
       "id": "401872660",
@@ -45,7 +69,13 @@
         "Houston Texans",
         "Buffalo Bills"
       ],
-      "winner": "Buffalo Bills"
+      "scores": [
+        31,
+        36
+      ],
+      "home": "Houston Texans",
+      "winner": "Buffalo Bills",
+      "week": 1
     },
     {
       "id": "401872661",
@@ -54,7 +84,13 @@
         "Carolina Panthers",
         "Chicago Bears"
       ],
-      "winner": "Chicago Bears"
+      "scores": [
+        37,
+        59
+      ],
+      "home": "Carolina Panthers",
+      "winner": "Chicago Bears",
+      "week": 1
     },
     {
       "id": "401872922",
@@ -63,7 +99,13 @@
         "Jacksonville Jaguars",
         "Cleveland Browns"
       ],
-      "winner": "Jacksonville Jaguars"
+      "scores": [
+        34,
+        10
+      ],
+      "home": "Jacksonville Jaguars",
+      "winner": "Jacksonville Jaguars",
+      "week": 1
     },
     {
       "id": "401872923",
@@ -72,7 +114,14 @@
         "Detroit Lions",
         "New Orleans Saints"
       ],
-      "winner": "Detroit Lions"
+      "scores": [
+        31,
+        30
+      ],
+      "home": "Detroit Lions",
+      "winner": "Detroit Lions",
+      "week": 1,
+      "detail": "Final/OT"
     },
     {
       "id": "401872924",
@@ -81,7 +130,13 @@
         "Tennessee Titans",
         "New York Jets"
       ],
-      "winner": "New York Jets"
+      "scores": [
+        10,
+        23
+      ],
+      "home": "Tennessee Titans",
+      "winner": "New York Jets",
+      "week": 1
     },
     {
       "id": "401872925",
@@ -90,7 +145,13 @@
         "Cincinnati Bengals",
         "Tampa Bay Buccaneers"
       ],
-      "winner": "Cincinnati Bengals"
+      "scores": [
+        33,
+        27
+      ],
+      "home": "Cincinnati Bengals",
+      "winner": "Cincinnati Bengals",
+      "week": 1
     },
     {
       "id": "401872926",
@@ -99,7 +160,13 @@
         "Los Angeles Chargers",
         "Arizona Cardinals"
       ],
-      "winner": "Arizona Cardinals"
+      "scores": [
+        14,
+        26
+      ],
+      "home": "Los Angeles Chargers",
+      "winner": "Arizona Cardinals",
+      "week": 1
     },
     {
       "id": "401872927",
@@ -108,7 +175,13 @@
         "Minnesota Vikings",
         "Green Bay Packers"
       ],
-      "winner": "Minnesota Vikings"
+      "scores": [
+        39,
+        22
+      ],
+      "home": "Minnesota Vikings",
+      "winner": "Minnesota Vikings",
+      "week": 1
     },
     {
       "id": "401872928",
@@ -117,7 +190,13 @@
         "Las Vegas Raiders",
         "Miami Dolphins"
       ],
-      "winner": "Las Vegas Raiders"
+      "scores": [
+        27,
+        13
+      ],
+      "home": "Las Vegas Raiders",
+      "winner": "Las Vegas Raiders",
+      "week": 1
     },
     {
       "id": "401872929",
@@ -126,7 +205,13 @@
         "Philadelphia Eagles",
         "Washington Commanders"
       ],
-      "winner": "Philadelphia Eagles"
+      "scores": [
+        24,
+        22
+      ],
+      "home": "Philadelphia Eagles",
+      "winner": "Philadelphia Eagles",
+      "week": 1
     },
     {
       "id": "401872930",
@@ -135,7 +220,13 @@
         "New York Giants",
         "Dallas Cowboys"
       ],
-      "winner": "New York Giants"
+      "scores": [
+        28,
+        20
+      ],
+      "home": "New York Giants",
+      "winner": "New York Giants",
+      "week": 1
     },
     {
       "id": "401872931",
@@ -144,7 +235,13 @@
         "Kansas City Chiefs",
         "Denver Broncos"
       ],
-      "winner": "Kansas City Chiefs"
+      "scores": [
+        31,
+        10
+      ],
+      "home": "Kansas City Chiefs",
+      "winner": "Kansas City Chiefs",
+      "week": 1
     },
     {
       "id": "401872932",
@@ -153,7 +250,13 @@
         "Buffalo Bills",
         "Detroit Lions"
       ],
-      "winner": "Buffalo Bills"
+      "scores": [
+        41,
+        31
+      ],
+      "home": "Buffalo Bills",
+      "winner": "Buffalo Bills",
+      "week": 2
     },
     {
       "id": "401872933",
@@ -162,7 +265,13 @@
         "Atlanta Falcons",
         "Carolina Panthers"
       ],
-      "winner": "Carolina Panthers"
+      "scores": [
+        3,
+        34
+      ],
+      "home": "Atlanta Falcons",
+      "winner": "Carolina Panthers",
+      "week": 2
     },
     {
       "id": "401872934",
@@ -171,7 +280,13 @@
         "Houston Texans",
         "Cincinnati Bengals"
       ],
-      "winner": "Cincinnati Bengals"
+      "scores": [
+        6,
+        20
+      ],
+      "home": "Houston Texans",
+      "winner": "Cincinnati Bengals",
+      "week": 2
     },
     {
       "id": "401872935",
@@ -180,7 +295,13 @@
         "Tampa Bay Buccaneers",
         "Cleveland Browns"
       ],
-      "winner": "Cleveland Browns"
+      "scores": [
+        19,
+        23
+      ],
+      "home": "Tampa Bay Buccaneers",
+      "winner": "Cleveland Browns",
+      "week": 2
     },
     {
       "id": "401872936",
@@ -189,7 +310,14 @@
         "New York Jets",
         "Green Bay Packers"
       ],
-      "winner": "Green Bay Packers"
+      "scores": [
+        17,
+        20
+      ],
+      "home": "New York Jets",
+      "winner": "Green Bay Packers",
+      "week": 2,
+      "detail": "Final/OT"
     },
     {
       "id": "401872937",
@@ -198,7 +326,13 @@
         "Chicago Bears",
         "Minnesota Vikings"
       ],
-      "winner": "Minnesota Vikings"
+      "scores": [
+        3,
+        9
+      ],
+      "home": "Chicago Bears",
+      "winner": "Minnesota Vikings",
+      "week": 2
     },
     {
       "id": "401872938",
@@ -207,7 +341,13 @@
         "Baltimore Ravens",
         "New Orleans Saints"
       ],
-      "winner": "New Orleans Saints"
+      "scores": [
+        17,
+        24
+      ],
+      "home": "Baltimore Ravens",
+      "winner": "New Orleans Saints",
+      "week": 2
     },
     {
       "id": "401872939",
@@ -216,7 +356,13 @@
         "Tennessee Titans",
         "Philadelphia Eagles"
       ],
-      "winner": "Philadelphia Eagles"
+      "scores": [
+        20,
+        24
+      ],
+      "home": "Tennessee Titans",
+      "winner": "Philadelphia Eagles",
+      "week": 2
     },
     {
       "id": "401872940",
@@ -225,7 +371,13 @@
         "Denver Broncos",
         "Jacksonville Jaguars"
       ],
-      "winner": "Denver Broncos"
+      "scores": [
+        20,
+        13
+      ],
+      "home": "Denver Broncos",
+      "winner": "Denver Broncos",
+      "week": 2
     },
     {
       "id": "401872941",
@@ -234,7 +386,13 @@
         "Los Angeles Chargers",
         "Las Vegas Raiders"
       ],
-      "winner": "Las Vegas Raiders"
+      "scores": [
+        14,
+        26
+      ],
+      "home": "Los Angeles Chargers",
+      "winner": "Las Vegas Raiders",
+      "week": 2
     },
     {
       "id": "401872942",
@@ -243,7 +401,13 @@
         "San Francisco 49ers",
         "Miami Dolphins"
       ],
-      "winner": "San Francisco 49ers"
+      "scores": [
+        35,
+        13
+      ],
+      "home": "San Francisco 49ers",
+      "winner": "San Francisco 49ers",
+      "week": 2
     },
     {
       "id": "401872943",
@@ -252,7 +416,13 @@
         "Arizona Cardinals",
         "Seattle Seahawks"
       ],
-      "winner": "Seattle Seahawks"
+      "scores": [
+        7,
+        31
+      ],
+      "home": "Arizona Cardinals",
+      "winner": "Seattle Seahawks",
+      "week": 2
     },
     {
       "id": "401872944",
@@ -261,7 +431,13 @@
         "Dallas Cowboys",
         "Washington Commanders"
       ],
-      "winner": "Dallas Cowboys"
+      "scores": [
+        37,
+        20
+      ],
+      "home": "Dallas Cowboys",
+      "winner": "Dallas Cowboys",
+      "week": 2
     },
     {
       "id": "401872945",
@@ -270,7 +446,14 @@
         "Kansas City Chiefs",
         "Indianapolis Colts"
       ],
-      "winner": "Kansas City Chiefs"
+      "scores": [
+        33,
+        30
+      ],
+      "home": "Kansas City Chiefs",
+      "winner": "Kansas City Chiefs",
+      "week": 2,
+      "detail": "Final/OT"
     },
     {
       "id": "401872946",
@@ -279,7 +462,13 @@
         "New England Patriots",
         "Pittsburgh Steelers"
       ],
-      "winner": "New England Patriots"
+      "scores": [
+        20,
+        3
+      ],
+      "home": "New England Patriots",
+      "winner": "New England Patriots",
+      "week": 2
     },
     {
       "id": "401872947",
@@ -288,7 +477,13 @@
         "Los Angeles Rams",
         "New York Giants"
       ],
-      "winner": "Los Angeles Rams"
+      "scores": [
+        28,
+        6
+      ],
+      "home": "Los Angeles Rams",
+      "winner": "Los Angeles Rams",
+      "week": 2
     },
     {
       "id": "401872948",
@@ -297,7 +492,13 @@
         "Green Bay Packers",
         "Atlanta Falcons"
       ],
-      "winner": "Atlanta Falcons"
+      "scores": [
+        14,
+        35
+      ],
+      "home": "Green Bay Packers",
+      "winner": "Atlanta Falcons",
+      "week": 3
     },
     {
       "id": "401872949",
@@ -306,7 +507,13 @@
         "Cleveland Browns",
         "Carolina Panthers"
       ],
-      "winner": "Cleveland Browns"
+      "scores": [
+        21,
+        18
+      ],
+      "home": "Cleveland Browns",
+      "winner": "Cleveland Browns",
+      "week": 3
     },
     {
       "id": "401872950",
@@ -315,7 +522,13 @@
         "Pittsburgh Steelers",
         "Cincinnati Bengals"
       ],
-      "winner": "Pittsburgh Steelers"
+      "scores": [
+        30,
+        27
+      ],
+      "home": "Pittsburgh Steelers",
+      "winner": "Pittsburgh Steelers",
+      "week": 3
     },
     {
       "id": "401872951",
@@ -324,7 +537,13 @@
         "Indianapolis Colts",
         "Houston Texans"
       ],
-      "winner": "Indianapolis Colts"
+      "scores": [
+        19,
+        17
+      ],
+      "home": "Indianapolis Colts",
+      "winner": "Indianapolis Colts",
+      "week": 3
     },
     {
       "id": "401872952",
@@ -333,7 +552,13 @@
         "Miami Dolphins",
         "Kansas City Chiefs"
       ],
-      "winner": "Kansas City Chiefs"
+      "scores": [
+        10,
+        24
+      ],
+      "home": "Miami Dolphins",
+      "winner": "Kansas City Chiefs",
+      "week": 3
     },
     {
       "id": "401872953",
@@ -342,7 +567,13 @@
         "Buffalo Bills",
         "Los Angeles Chargers"
       ],
-      "winner": "Buffalo Bills"
+      "scores": [
+        24,
+        16
+      ],
+      "home": "Buffalo Bills",
+      "winner": "Buffalo Bills",
+      "week": 3
     },
     {
       "id": "401872954",
@@ -351,7 +582,13 @@
         "Detroit Lions",
         "New York Jets"
       ],
-      "winner": "Detroit Lions"
+      "scores": [
+        31,
+        24
+      ],
+      "home": "Detroit Lions",
+      "winner": "Detroit Lions",
+      "week": 3
     },
     {
       "id": "401872955",
@@ -360,7 +597,13 @@
         "Washington Commanders",
         "Seattle Seahawks"
       ],
-      "winner": "Washington Commanders"
+      "scores": [
+        33,
+        31
+      ],
+      "home": "Washington Commanders",
+      "winner": "Washington Commanders",
+      "week": 3
     },
     {
       "id": "401872956",
@@ -369,7 +612,13 @@
         "New York Giants",
         "Tennessee Titans"
       ],
-      "winner": "New York Giants"
+      "scores": [
+        12,
+        7
+      ],
+      "home": "New York Giants",
+      "winner": "New York Giants",
+      "week": 3
     },
     {
       "id": "401872957",
@@ -378,7 +627,13 @@
         "Jacksonville Jaguars",
         "New England Patriots"
       ],
-      "winner": "Jacksonville Jaguars"
+      "scores": [
+        35,
+        6
+      ],
+      "home": "Jacksonville Jaguars",
+      "winner": "Jacksonville Jaguars",
+      "week": 3
     },
     {
       "id": "401872958",
@@ -387,7 +642,13 @@
         "San Francisco 49ers",
         "Arizona Cardinals"
       ],
-      "winner": "San Francisco 49ers"
+      "scores": [
+        36,
+        30
+      ],
+      "home": "San Francisco 49ers",
+      "winner": "San Francisco 49ers",
+      "week": 3
     },
     {
       "id": "401872959",
@@ -396,7 +657,13 @@
         "Tampa Bay Buccaneers",
         "Minnesota Vikings"
       ],
-      "winner": "Minnesota Vikings"
+      "scores": [
+        16,
+        23
+      ],
+      "home": "Tampa Bay Buccaneers",
+      "winner": "Minnesota Vikings",
+      "week": 3
     },
     {
       "id": "401872960",
@@ -405,7 +672,13 @@
         "Dallas Cowboys",
         "Baltimore Ravens"
       ],
-      "winner": "Baltimore Ravens"
+      "scores": [
+        31,
+        34
+      ],
+      "home": "Dallas Cowboys",
+      "winner": "Baltimore Ravens",
+      "week": 3
     },
     {
       "id": "401872961",
@@ -414,7 +687,13 @@
         "New Orleans Saints",
         "Las Vegas Raiders"
       ],
-      "winner": "Las Vegas Raiders"
+      "scores": [
+        27,
+        35
+      ],
+      "home": "New Orleans Saints",
+      "winner": "Las Vegas Raiders",
+      "week": 3
     },
     {
       "id": "401872962",
@@ -423,7 +702,13 @@
         "Denver Broncos",
         "Los Angeles Rams"
       ],
-      "winner": "Denver Broncos"
+      "scores": [
+        30,
+        26
+      ],
+      "home": "Denver Broncos",
+      "winner": "Denver Broncos",
+      "week": 3
     },
     {
       "id": "401872963",
@@ -432,7 +717,13 @@
         "Chicago Bears",
         "Philadelphia Eagles"
       ],
-      "winner": "Chicago Bears"
+      "scores": [
+        27,
+        7
+      ],
+      "home": "Chicago Bears",
+      "winner": "Chicago Bears",
+      "week": 3
     },
     {
       "id": "401872964",
@@ -441,7 +732,13 @@
         "Cleveland Browns",
         "Pittsburgh Steelers"
       ],
-      "winner": "Cleveland Browns"
+      "scores": [
+        27,
+        24
+      ],
+      "home": "Cleveland Browns",
+      "winner": "Cleveland Browns",
+      "week": 4
     },
     {
       "id": "401872965",
@@ -450,7 +747,13 @@
         "Washington Commanders",
         "Indianapolis Colts"
       ],
-      "winner": "Indianapolis Colts"
+      "scores": [
+        13,
+        30
+      ],
+      "home": "Washington Commanders",
+      "winner": "Indianapolis Colts",
+      "week": 4
     },
     {
       "id": "401872966",
@@ -459,7 +762,13 @@
         "New York Giants",
         "Arizona Cardinals"
       ],
-      "winner": "New York Giants"
+      "scores": [
+        36,
+        24
+      ],
+      "home": "New York Giants",
+      "winner": "New York Giants",
+      "week": 4
     },
     {
       "id": "401872967",
@@ -468,7 +777,13 @@
         "Houston Texans",
         "Dallas Cowboys"
       ],
-      "winner": "Dallas Cowboys"
+      "scores": [
+        30,
+        34
+      ],
+      "home": "Houston Texans",
+      "winner": "Dallas Cowboys",
+      "week": 4
     },
     {
       "id": "401872968",
@@ -477,7 +792,13 @@
         "Tampa Bay Buccaneers",
         "Green Bay Packers"
       ],
-      "winner": "Green Bay Packers"
+      "scores": [
+        14,
+        17
+      ],
+      "home": "Tampa Bay Buccaneers",
+      "winner": "Green Bay Packers",
+      "week": 4
     },
     {
       "id": "401872969",
@@ -486,7 +807,13 @@
         "Cincinnati Bengals",
         "Jacksonville Jaguars"
       ],
-      "winner": "Jacksonville Jaguars"
+      "scores": [
+        17,
+        22
+      ],
+      "home": "Cincinnati Bengals",
+      "winner": "Jacksonville Jaguars",
+      "week": 4
     },
     {
       "id": "401872970",
@@ -495,7 +822,13 @@
         "Philadelphia Eagles",
         "Los Angeles Rams"
       ],
-      "winner": "Los Angeles Rams"
+      "scores": [
+        20,
+        24
+      ],
+      "home": "Philadelphia Eagles",
+      "winner": "Los Angeles Rams",
+      "week": 4
     },
     {
       "id": "401872971",
@@ -504,7 +837,13 @@
         "Buffalo Bills",
         "New England Patriots"
       ],
-      "winner": "New England Patriots"
+      "scores": [
+        26,
+        29
+      ],
+      "home": "Buffalo Bills",
+      "winner": "New England Patriots",
+      "week": 4
     },
     {
       "id": "401872972",
@@ -513,7 +852,13 @@
         "Chicago Bears",
         "New York Jets"
       ],
-      "winner": "Chicago Bears"
+      "scores": [
+        23,
+        12
+      ],
+      "home": "Chicago Bears",
+      "winner": "Chicago Bears",
+      "week": 4
     },
     {
       "id": "401872973",
@@ -522,7 +867,13 @@
         "Baltimore Ravens",
         "Tennessee Titans"
       ],
-      "winner": "Baltimore Ravens"
+      "scores": [
+        24,
+        18
+      ],
+      "home": "Baltimore Ravens",
+      "winner": "Baltimore Ravens",
+      "week": 4
     },
     {
       "id": "401872974",
@@ -531,7 +882,13 @@
         "Minnesota Vikings",
         "Miami Dolphins"
       ],
-      "winner": "Minnesota Vikings"
+      "scores": [
+        15,
+        10
+      ],
+      "home": "Minnesota Vikings",
+      "winner": "Minnesota Vikings",
+      "week": 4
     },
     {
       "id": "401872975",
@@ -540,7 +897,13 @@
         "San Francisco 49ers",
         "Denver Broncos"
       ],
-      "winner": "San Francisco 49ers"
+      "scores": [
+        24,
+        14
+      ],
+      "home": "San Francisco 49ers",
+      "winner": "San Francisco 49ers",
+      "week": 4
     },
     {
       "id": "401872976",
@@ -549,7 +912,13 @@
         "Las Vegas Raiders",
         "Kansas City Chiefs"
       ],
-      "winner": "Kansas City Chiefs"
+      "scores": [
+        27,
+        30
+      ],
+      "home": "Las Vegas Raiders",
+      "winner": "Kansas City Chiefs",
+      "week": 4
     },
     {
       "id": "401872977",
@@ -558,7 +927,13 @@
         "Seattle Seahawks",
         "Los Angeles Chargers"
       ],
-      "winner": "Seattle Seahawks"
+      "scores": [
+        30,
+        23
+      ],
+      "home": "Seattle Seahawks",
+      "winner": "Seattle Seahawks",
+      "week": 4
     },
     {
       "id": "401872978",
@@ -567,7 +942,13 @@
         "Carolina Panthers",
         "Detroit Lions"
       ],
-      "winner": "Carolina Panthers"
+      "scores": [
+        32,
+        26
+      ],
+      "home": "Carolina Panthers",
+      "winner": "Carolina Panthers",
+      "week": 4
     },
     {
       "id": "401872979",
@@ -576,7 +957,13 @@
         "New Orleans Saints",
         "Atlanta Falcons"
       ],
-      "winner": "Atlanta Falcons"
+      "scores": [
+        24,
+        45
+      ],
+      "home": "New Orleans Saints",
+      "winner": "Atlanta Falcons",
+      "week": 4
     },
     {
       "id": "401872980",
@@ -585,7 +972,13 @@
         "Dallas Cowboys",
         "Tampa Bay Buccaneers"
       ],
-      "winner": "Tampa Bay Buccaneers"
+      "scores": [
+        16,
+        24
+      ],
+      "home": "Dallas Cowboys",
+      "winner": "Tampa Bay Buccaneers",
+      "week": 5
     },
     {
       "id": "401872981",
@@ -594,7 +987,13 @@
         "Jacksonville Jaguars",
         "Philadelphia Eagles"
       ],
-      "winner": "Jacksonville Jaguars"
+      "scores": [
+        19,
+        17
+      ],
+      "home": "Jacksonville Jaguars",
+      "winner": "Jacksonville Jaguars",
+      "week": 5
     },
     {
       "id": "401872982",
@@ -603,7 +1002,13 @@
         "Miami Dolphins",
         "Cincinnati Bengals"
       ],
-      "winner": "Cincinnati Bengals"
+      "scores": [
+        24,
+        31
+      ],
+      "home": "Miami Dolphins",
+      "winner": "Cincinnati Bengals",
+      "week": 5
     },
     {
       "id": "401872983",
@@ -612,7 +1017,13 @@
         "New York Jets",
         "Cleveland Browns"
       ],
-      "winner": "New York Jets"
+      "scores": [
+        17,
+        12
+      ],
+      "home": "New York Jets",
+      "winner": "New York Jets",
+      "week": 5
     },
     {
       "id": "401872984",
@@ -621,7 +1032,13 @@
         "Tennessee Titans",
         "Houston Texans"
       ],
-      "winner": "Houston Texans"
+      "scores": [
+        3,
+        26
+      ],
+      "home": "Tennessee Titans",
+      "winner": "Houston Texans",
+      "week": 5
     },
     {
       "id": "401872985",
@@ -630,7 +1047,13 @@
         "Pittsburgh Steelers",
         "Indianapolis Colts"
       ],
-      "winner": "Pittsburgh Steelers"
+      "scores": [
+        34,
+        22
+      ],
+      "home": "Pittsburgh Steelers",
+      "winner": "Pittsburgh Steelers",
+      "week": 5
     },
     {
       "id": "401872986",
@@ -639,7 +1062,13 @@
         "New England Patriots",
         "Las Vegas Raiders"
       ],
-      "winner": "New England Patriots"
+      "scores": [
+        45,
+        17
+      ],
+      "home": "New England Patriots",
+      "winner": "New England Patriots",
+      "week": 5
     },
     {
       "id": "401872987",
@@ -648,7 +1077,13 @@
         "New Orleans Saints",
         "Minnesota Vikings"
       ],
-      "winner": "Minnesota Vikings"
+      "scores": [
+        13,
+        23
+      ],
+      "home": "New Orleans Saints",
+      "winner": "Minnesota Vikings",
+      "week": 5
     },
     {
       "id": "401872988",
@@ -657,7 +1092,14 @@
         "Washington Commanders",
         "New York Giants"
       ],
-      "winner": null
+      "scores": [
+        27,
+        27
+      ],
+      "home": "Washington Commanders",
+      "winner": null,
+      "week": 5,
+      "detail": "Final/OT"
     },
     {
       "id": "401872989",
@@ -666,7 +1108,13 @@
         "Los Angeles Chargers",
         "Denver Broncos"
       ],
-      "winner": "Denver Broncos"
+      "scores": [
+        17,
+        23
+      ],
+      "home": "Los Angeles Chargers",
+      "winner": "Denver Broncos",
+      "week": 5
     },
     {
       "id": "401872990",
@@ -675,7 +1123,13 @@
         "Green Bay Packers",
         "Chicago Bears"
       ],
-      "winner": "Green Bay Packers"
+      "scores": [
+        31,
+        7
+      ],
+      "home": "Green Bay Packers",
+      "winner": "Green Bay Packers",
+      "week": 5
     },
     {
       "id": "401872991",
@@ -684,7 +1138,13 @@
         "Arizona Cardinals",
         "Detroit Lions"
       ],
-      "winner": "Detroit Lions"
+      "scores": [
+        21,
+        45
+      ],
+      "home": "Arizona Cardinals",
+      "winner": "Detroit Lions",
+      "week": 5
     },
     {
       "id": "401872992",
@@ -693,7 +1153,13 @@
         "Seattle Seahawks",
         "San Francisco 49ers"
       ],
-      "winner": "San Francisco 49ers"
+      "scores": [
+        29,
+        32
+      ],
+      "home": "Seattle Seahawks",
+      "winner": "San Francisco 49ers",
+      "week": 5
     },
     {
       "id": "401872993",
@@ -702,7 +1168,14 @@
         "Atlanta Falcons",
         "Baltimore Ravens"
       ],
-      "winner": "Baltimore Ravens"
+      "scores": [
+        23,
+        30
+      ],
+      "home": "Atlanta Falcons",
+      "winner": "Baltimore Ravens",
+      "week": 5,
+      "detail": "Final/OT"
     },
     {
       "id": "401872994",
@@ -711,7 +1184,14 @@
         "Los Angeles Rams",
         "Buffalo Bills"
       ],
-      "winner": "Buffalo Bills"
+      "scores": [
+        34,
+        37
+      ],
+      "home": "Los Angeles Rams",
+      "winner": "Buffalo Bills",
+      "week": 5,
+      "detail": "Final/OT"
     },
     {
       "id": "401872995",
@@ -720,7 +1200,14 @@
         "Denver Broncos",
         "Seattle Seahawks"
       ],
-      "winner": "Denver Broncos"
+      "scores": [
+        17,
+        14
+      ],
+      "home": "Denver Broncos",
+      "winner": "Denver Broncos",
+      "week": 6,
+      "detail": "Final/OT"
     },
     {
       "id": "401872996",
@@ -729,7 +1216,13 @@
         "Jacksonville Jaguars",
         "Houston Texans"
       ],
-      "winner": "Houston Texans"
+      "scores": [
+        31,
+        34
+      ],
+      "home": "Jacksonville Jaguars",
+      "winner": "Houston Texans",
+      "week": 6
     },
     {
       "id": "401872997",
@@ -738,7 +1231,13 @@
         "Cleveland Browns",
         "Baltimore Ravens"
       ],
-      "winner": "Cleveland Browns"
+      "scores": [
+        13,
+        10
+      ],
+      "home": "Cleveland Browns",
+      "winner": "Cleveland Browns",
+      "week": 6
     },
     {
       "id": "401872998",
@@ -747,7 +1246,13 @@
         "Philadelphia Eagles",
         "Carolina Panthers"
       ],
-      "winner": "Carolina Panthers"
+      "scores": [
+        14,
+        25
+      ],
+      "home": "Philadelphia Eagles",
+      "winner": "Carolina Panthers",
+      "week": 6
     },
     {
       "id": "401872999",
@@ -756,7 +1261,13 @@
         "Atlanta Falcons",
         "Chicago Bears"
       ],
-      "winner": "Chicago Bears"
+      "scores": [
+        23,
+        31
+      ],
+      "home": "Atlanta Falcons",
+      "winner": "Chicago Bears",
+      "week": 6
     },
     {
       "id": "401873000",
@@ -765,7 +1276,13 @@
         "New York Giants",
         "New Orleans Saints"
       ],
-      "winner": "New Orleans Saints"
+      "scores": [
+        27,
+        34
+      ],
+      "home": "New York Giants",
+      "winner": "New Orleans Saints",
+      "week": 6
     },
     {
       "id": "401873001",
@@ -774,7 +1291,13 @@
         "New England Patriots",
         "New York Jets"
       ],
-      "winner": "New England Patriots"
+      "scores": [
+        26,
+        19
+      ],
+      "home": "New England Patriots",
+      "winner": "New England Patriots",
+      "week": 6
     },
     {
       "id": "401873002",
@@ -783,7 +1306,14 @@
         "Tampa Bay Buccaneers",
         "Pittsburgh Steelers"
       ],
-      "winner": "Pittsburgh Steelers"
+      "scores": [
+        19,
+        26
+      ],
+      "home": "Tampa Bay Buccaneers",
+      "winner": "Pittsburgh Steelers",
+      "week": 6,
+      "detail": "Final/OT"
     },
     {
       "id": "401873003",
@@ -792,7 +1322,13 @@
         "Indianapolis Colts",
         "Tennessee Titans"
       ],
-      "winner": "Tennessee Titans"
+      "scores": [
+        20,
+        26
+      ],
+      "home": "Indianapolis Colts",
+      "winner": "Tennessee Titans",
+      "week": 6
     },
     {
       "id": "401873004",
@@ -801,7 +1337,13 @@
         "Los Angeles Rams",
         "Arizona Cardinals"
       ],
-      "winner": "Arizona Cardinals"
+      "scores": [
+        16,
+        18
+      ],
+      "home": "Los Angeles Rams",
+      "winner": "Arizona Cardinals",
+      "week": 6
     },
     {
       "id": "401873005",
@@ -810,7 +1352,13 @@
         "Las Vegas Raiders",
         "Buffalo Bills"
       ],
-      "winner": "Buffalo Bills"
+      "scores": [
+        30,
+        33
+      ],
+      "home": "Las Vegas Raiders",
+      "winner": "Buffalo Bills",
+      "week": 6
     },
     {
       "id": "401873006",
@@ -819,7 +1367,13 @@
         "Kansas City Chiefs",
         "Los Angeles Chargers"
       ],
-      "winner": "Kansas City Chiefs"
+      "scores": [
+        22,
+        6
+      ],
+      "home": "Kansas City Chiefs",
+      "winner": "Kansas City Chiefs",
+      "week": 6
     },
     {
       "id": "401873007",
@@ -828,7 +1382,13 @@
         "Green Bay Packers",
         "Dallas Cowboys"
       ],
-      "winner": "Green Bay Packers"
+      "scores": [
+        23,
+        13
+      ],
+      "home": "Green Bay Packers",
+      "winner": "Green Bay Packers",
+      "week": 6
     },
     {
       "id": "401873008",
@@ -837,7 +1397,13 @@
         "San Francisco 49ers",
         "Washington Commanders"
       ],
-      "winner": "San Francisco 49ers"
+      "scores": [
+        23,
+        17
+      ],
+      "home": "San Francisco 49ers",
+      "winner": "San Francisco 49ers",
+      "week": 6
     },
     {
       "id": "401873010",
@@ -846,7 +1412,13 @@
         "Chicago Bears",
         "New England Patriots"
       ],
-      "winner": "Chicago Bears"
+      "scores": [
+        30,
+        24
+      ],
+      "home": "Chicago Bears",
+      "winner": "Chicago Bears",
+      "week": 7
     },
     {
       "id": "401873011",
@@ -855,7 +1427,13 @@
         "New Orleans Saints",
         "Pittsburgh Steelers"
       ],
-      "winner": "Pittsburgh Steelers"
+      "scores": [
+        10,
+        16
+      ],
+      "home": "New Orleans Saints",
+      "winner": "Pittsburgh Steelers",
+      "week": 7
     },
     {
       "id": "401873012",
@@ -864,7 +1442,13 @@
         "Baltimore Ravens",
         "Cincinnati Bengals"
       ],
-      "winner": "Cincinnati Bengals"
+      "scores": [
+        13,
+        35
+      ],
+      "home": "Baltimore Ravens",
+      "winner": "Cincinnati Bengals",
+      "week": 7
     },
     {
       "id": "401873013",
@@ -873,7 +1457,13 @@
         "Tennessee Titans",
         "Cleveland Browns"
       ],
-      "winner": "Cleveland Browns"
+      "scores": [
+        24,
+        27
+      ],
+      "home": "Tennessee Titans",
+      "winner": "Cleveland Browns",
+      "week": 7
     },
     {
       "id": "401873014",
@@ -882,7 +1472,13 @@
         "Minnesota Vikings",
         "Indianapolis Colts"
       ],
-      "winner": "Minnesota Vikings"
+      "scores": [
+        16,
+        10
+      ],
+      "home": "Minnesota Vikings",
+      "winner": "Minnesota Vikings",
+      "week": 7
     },
     {
       "id": "401873015",
@@ -891,7 +1487,13 @@
         "New York Jets",
         "Miami Dolphins"
       ],
-      "winner": "Miami Dolphins"
+      "scores": [
+        25,
+        28
+      ],
+      "home": "New York Jets",
+      "winner": "Miami Dolphins",
+      "week": 7
     },
     {
       "id": "401873016",
@@ -900,7 +1502,14 @@
         "Houston Texans",
         "New York Giants"
       ],
-      "winner": "New York Giants"
+      "scores": [
+        21,
+        27
+      ],
+      "home": "Houston Texans",
+      "winner": "New York Giants",
+      "week": 7,
+      "detail": "Final/OT"
     },
     {
       "id": "401873017",
@@ -909,7 +1518,13 @@
         "Atlanta Falcons",
         "San Francisco 49ers"
       ],
-      "winner": "Atlanta Falcons"
+      "scores": [
+        29,
+        20
+      ],
+      "home": "Atlanta Falcons",
+      "winner": "Atlanta Falcons",
+      "week": 7
     },
     {
       "id": "401873018",
@@ -918,7 +1533,13 @@
         "Carolina Panthers",
         "Tampa Bay Buccaneers"
       ],
-      "winner": "Tampa Bay Buccaneers"
+      "scores": [
+        13,
+        43
+      ],
+      "home": "Carolina Panthers",
+      "winner": "Tampa Bay Buccaneers",
+      "week": 7
     },
     {
       "id": "401873019",
@@ -927,7 +1548,13 @@
         "Arizona Cardinals",
         "Denver Broncos"
       ],
-      "winner": "Denver Broncos"
+      "scores": [
+        16,
+        30
+      ],
+      "home": "Arizona Cardinals",
+      "winner": "Denver Broncos",
+      "week": 7
     },
     {
       "id": "401873020",
@@ -936,7 +1563,13 @@
         "Detroit Lions",
         "Green Bay Packers"
       ],
-      "winner": "Detroit Lions"
+      "scores": [
+        20,
+        17
+      ],
+      "home": "Detroit Lions",
+      "winner": "Detroit Lions",
+      "week": 7
     },
     {
       "id": "401873021",
@@ -945,7 +1578,13 @@
         "Las Vegas Raiders",
         "Los Angeles Rams"
       ],
-      "winner": "Los Angeles Rams"
+      "scores": [
+        21,
+        35
+      ],
+      "home": "Las Vegas Raiders",
+      "winner": "Los Angeles Rams",
+      "week": 7
     },
     {
       "id": "401873022",
@@ -954,7 +1593,13 @@
         "Seattle Seahawks",
         "Kansas City Chiefs"
       ],
-      "winner": "Seattle Seahawks"
+      "scores": [
+        20,
+        3
+      ],
+      "home": "Seattle Seahawks",
+      "winner": "Seattle Seahawks",
+      "week": 7
     },
     {
       "id": "401873009",
@@ -963,7 +1608,13 @@
         "Philadelphia Eagles",
         "Dallas Cowboys"
       ],
-      "winner": "Dallas Cowboys"
+      "scores": [
+        21,
+        38
+      ],
+      "home": "Philadelphia Eagles",
+      "winner": "Dallas Cowboys",
+      "week": 7
     },
     {
       "id": "401873023",
@@ -972,7 +1623,13 @@
         "Green Bay Packers",
         "Carolina Panthers"
       ],
-      "winner": "Green Bay Packers"
+      "scores": [
+        27,
+        19
+      ],
+      "home": "Green Bay Packers",
+      "winner": "Green Bay Packers",
+      "week": 8
     },
     {
       "id": "401873024",
@@ -981,7 +1638,14 @@
         "Dallas Cowboys",
         "Arizona Cardinals"
       ],
-      "winner": "Arizona Cardinals"
+      "scores": [
+        30,
+        33
+      ],
+      "home": "Dallas Cowboys",
+      "winner": "Arizona Cardinals",
+      "week": 8,
+      "detail": "Final/OT"
     },
     {
       "id": "401873025",
@@ -990,7 +1654,13 @@
         "Tampa Bay Buccaneers",
         "Atlanta Falcons"
       ],
-      "winner": "Tampa Bay Buccaneers"
+      "scores": [
+        16,
+        0
+      ],
+      "home": "Tampa Bay Buccaneers",
+      "winner": "Tampa Bay Buccaneers",
+      "week": 8
     },
     {
       "id": "401873026",
@@ -999,7 +1669,13 @@
         "Buffalo Bills",
         "Baltimore Ravens"
       ],
-      "winner": "Buffalo Bills"
+      "scores": [
+        36,
+        10
+      ],
+      "home": "Buffalo Bills",
+      "winner": "Buffalo Bills",
+      "week": 8
     },
     {
       "id": "401873027",
@@ -1008,7 +1684,13 @@
         "Pittsburgh Steelers",
         "Cleveland Browns"
       ],
-      "winner": "Pittsburgh Steelers"
+      "scores": [
+        27,
+        6
+      ],
+      "home": "Pittsburgh Steelers",
+      "winner": "Pittsburgh Steelers",
+      "week": 8
     },
     {
       "id": "401873028",
@@ -1017,7 +1699,13 @@
         "Jacksonville Jaguars",
         "Indianapolis Colts"
       ],
-      "winner": "Jacksonville Jaguars"
+      "scores": [
+        42,
+        7
+      ],
+      "home": "Jacksonville Jaguars",
+      "winner": "Jacksonville Jaguars",
+      "week": 8
     },
     {
       "id": "401873029",
@@ -1026,7 +1714,13 @@
         "New York Jets",
         "Las Vegas Raiders"
       ],
-      "winner": "Las Vegas Raiders"
+      "scores": [
+        33,
+        38
+      ],
+      "home": "New York Jets",
+      "winner": "Las Vegas Raiders",
+      "week": 8
     },
     {
       "id": "401873030",
@@ -1035,7 +1729,13 @@
         "Detroit Lions",
         "Minnesota Vikings"
       ],
-      "winner": "Detroit Lions"
+      "scores": [
+        19,
+        15
+      ],
+      "home": "Detroit Lions",
+      "winner": "Detroit Lions",
+      "week": 8
     },
     {
       "id": "401873031",
@@ -1044,7 +1744,14 @@
         "Cincinnati Bengals",
         "Tennessee Titans"
       ],
-      "winner": "Cincinnati Bengals"
+      "scores": [
+        43,
+        36
+      ],
+      "home": "Cincinnati Bengals",
+      "winner": "Cincinnati Bengals",
+      "week": 8,
+      "detail": "Final/OT"
     },
     {
       "id": "401873032",
@@ -1053,7 +1760,13 @@
         "Los Angeles Rams",
         "Los Angeles Chargers"
       ],
-      "winner": "Los Angeles Rams"
+      "scores": [
+        24,
+        9
+      ],
+      "home": "Los Angeles Rams",
+      "winner": "Los Angeles Rams",
+      "week": 8
     },
     {
       "id": "401873033",
@@ -1062,7 +1775,13 @@
         "Denver Broncos",
         "Kansas City Chiefs"
       ],
-      "winner": "Denver Broncos"
+      "scores": [
+        28,
+        24
+      ],
+      "home": "Denver Broncos",
+      "winner": "Denver Broncos",
+      "week": 8
     },
     {
       "id": "401873034",
@@ -1071,7 +1790,13 @@
         "Miami Dolphins",
         "New England Patriots"
       ],
-      "winner": "New England Patriots"
+      "scores": [
+        19,
+        24
+      ],
+      "home": "Miami Dolphins",
+      "winner": "New England Patriots",
+      "week": 8
     },
     {
       "id": "401873035",
@@ -1080,7 +1805,13 @@
         "Washington Commanders",
         "Philadelphia Eagles"
       ],
-      "winner": "Washington Commanders"
+      "scores": [
+        27,
+        10
+      ],
+      "home": "Washington Commanders",
+      "winner": "Washington Commanders",
+      "week": 8
     },
     {
       "id": "401873036",
@@ -1089,7 +1820,13 @@
         "Seattle Seahawks",
         "Chicago Bears"
       ],
-      "winner": "Chicago Bears"
+      "scores": [
+        17,
+        34
+      ],
+      "home": "Seattle Seahawks",
+      "winner": "Chicago Bears",
+      "week": 8
     }
   ]
 }
