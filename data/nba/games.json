@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-03",
+  "throughDate": "2026-11-04",
   "games": [
     {
       "id": "401909088",
@@ -1514,6 +1514,204 @@
       ],
       "home": "Los Angeles Lakers",
       "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909922",
+      "date": "2026-11-04",
+      "teams": [
+        "Detroit Pistons",
+        "Philadelphia 76ers"
+      ],
+      "scores": [
+        106,
+        112
+      ],
+      "home": "Detroit Pistons",
+      "winner": "Philadelphia 76ers"
+    },
+    {
+      "id": "401909923",
+      "date": "2026-11-04",
+      "teams": [
+        "Washington Wizards",
+        "Atlanta Hawks"
+      ],
+      "scores": [
+        105,
+        120
+      ],
+      "home": "Washington Wizards",
+      "winner": "Atlanta Hawks"
+    },
+    {
+      "id": "401909924",
+      "date": "2026-11-04",
+      "teams": [
+        "Boston Celtics",
+        "Milwaukee Bucks"
+      ],
+      "scores": [
+        109,
+        102
+      ],
+      "home": "Boston Celtics",
+      "winner": "Boston Celtics"
+    },
+    {
+      "id": "401909925",
+      "date": "2026-11-04",
+      "teams": [
+        "Brooklyn Nets",
+        "Charlotte Hornets"
+      ],
+      "scores": [
+        114,
+        104
+      ],
+      "home": "Brooklyn Nets",
+      "winner": "Brooklyn Nets"
+    },
+    {
+      "id": "401909926",
+      "date": "2026-11-04",
+      "teams": [
+        "New York Knicks",
+        "Chicago Bulls"
+      ],
+      "scores": [
+        135,
+        105
+      ],
+      "home": "New York Knicks",
+      "winner": "New York Knicks"
+    },
+    {
+      "id": "401909927",
+      "date": "2026-11-04",
+      "teams": [
+        "Memphis Grizzlies",
+        "Indiana Pacers"
+      ],
+      "scores": [
+        103,
+        107
+      ],
+      "home": "Memphis Grizzlies",
+      "winner": "Indiana Pacers"
+    },
+    {
+      "id": "401909928",
+      "date": "2026-11-04",
+      "teams": [
+        "New Orleans Pelicans",
+        "Utah Jazz"
+      ],
+      "scores": [
+        120,
+        113
+      ],
+      "home": "New Orleans Pelicans",
+      "winner": "New Orleans Pelicans",
+      "detail": "Final/OT"
+    },
+    {
+      "id": "401909929",
+      "date": "2026-11-04",
+      "teams": [
+        "Oklahoma City Thunder",
+        "Cleveland Cavaliers"
+      ],
+      "scores": [
+        124,
+        116
+      ],
+      "home": "Oklahoma City Thunder",
+      "winner": "Oklahoma City Thunder"
+    },
+    {
+      "id": "401909930",
+      "date": "2026-11-04",
+      "teams": [
+        "Houston Rockets",
+        "Minnesota Timberwolves"
+      ],
+      "scores": [
+        107,
+        117
+      ],
+      "home": "Houston Rockets",
+      "winner": "Minnesota Timberwolves"
+    },
+    {
+      "id": "401909931",
+      "date": "2026-11-04",
+      "teams": [
+        "Denver Nuggets",
+        "Toronto Raptors"
+      ],
+      "scores": [
+        128,
+        109
+      ],
+      "home": "Denver Nuggets",
+      "winner": "Denver Nuggets"
+    },
+    {
+      "id": "401909932",
+      "date": "2026-11-04",
+      "teams": [
+        "Phoenix Suns",
+        "Portland Trail Blazers"
+      ],
+      "scores": [
+        119,
+        132
+      ],
+      "home": "Phoenix Suns",
+      "winner": "Portland Trail Blazers"
+    },
+    {
+      "id": "401909933",
+      "date": "2026-11-04",
+      "teams": [
+        "San Antonio Spurs",
+        "Dallas Mavericks"
+      ],
+      "scores": [
+        112,
+        111
+      ],
+      "home": "San Antonio Spurs",
+      "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909934",
+      "date": "2026-11-04",
+      "teams": [
+        "Sacramento Kings",
+        "Los Angeles Lakers"
+      ],
+      "scores": [
+        103,
+        116
+      ],
+      "home": "Sacramento Kings",
+      "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909935",
+      "date": "2026-11-04",
+      "teams": [
+        "LA Clippers",
+        "Miami Heat"
+      ],
+      "scores": [
+        116,
+        117
+      ],
+      "home": "LA Clippers",
+      "winner": "Miami Heat",
+      "detail": "Final/OT"
     }
   ]
 }
