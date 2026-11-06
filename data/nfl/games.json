@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-04",
+  "throughDate": "2026-11-05",
   "games": [
     {
       "id": "401872656",
@@ -1827,6 +1827,21 @@
       "home": "Seattle Seahawks",
       "winner": "Chicago Bears",
       "week": 8
+    },
+    {
+      "id": "401873037",
+      "date": "2026-11-05",
+      "teams": [
+        "Baltimore Ravens",
+        "Jacksonville Jaguars"
+      ],
+      "scores": [
+        10,
+        33
+      ],
+      "home": "Baltimore Ravens",
+      "winner": "Jacksonville Jaguars",
+      "week": 9
     }
   ]
 }

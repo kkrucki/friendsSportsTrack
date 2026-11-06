@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-04",
+  "throughDate": "2026-11-05",
   "games": [
     {
       "id": "401909088",
@@ -1712,6 +1712,34 @@
       "home": "LA Clippers",
       "winner": "Miami Heat",
       "detail": "Final/OT"
+    },
+    {
+      "id": "401909936",
+      "date": "2026-11-05",
+      "teams": [
+        "Phoenix Suns",
+        "Orlando Magic"
+      ],
+      "scores": [
+        117,
+        104
+      ],
+      "home": "Phoenix Suns",
+      "winner": "Phoenix Suns"
+    },
+    {
+      "id": "401909937",
+      "date": "2026-11-05",
+      "teams": [
+        "Golden State Warriors",
+        "Miami Heat"
+      ],
+      "scores": [
+        120,
+        100
+      ],
+      "home": "Golden State Warriors",
+      "winner": "Golden State Warriors"
     }
   ]
 }
