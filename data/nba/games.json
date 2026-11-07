@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-05",
+  "throughDate": "2026-11-06",
   "games": [
     {
       "id": "401909088",
@@ -1740,6 +1740,141 @@
       ],
       "home": "Golden State Warriors",
       "winner": "Golden State Warriors"
+    },
+    {
+      "id": "401909287",
+      "date": "2026-11-06",
+      "teams": [
+        "Atlanta Hawks",
+        "Washington Wizards"
+      ],
+      "scores": [
+        139,
+        132
+      ],
+      "home": "Atlanta Hawks",
+      "winner": "Atlanta Hawks",
+      "cup": "group"
+    },
+    {
+      "id": "401909288",
+      "date": "2026-11-06",
+      "teams": [
+        "Charlotte Hornets",
+        "Boston Celtics"
+      ],
+      "scores": [
+        80,
+        119
+      ],
+      "home": "Charlotte Hornets",
+      "winner": "Boston Celtics",
+      "cup": "group"
+    },
+    {
+      "id": "401909289",
+      "date": "2026-11-06",
+      "teams": [
+        "Cleveland Cavaliers",
+        "Philadelphia 76ers"
+      ],
+      "scores": [
+        119,
+        95
+      ],
+      "home": "Cleveland Cavaliers",
+      "winner": "Cleveland Cavaliers",
+      "cup": "group"
+    },
+    {
+      "id": "401909290",
+      "date": "2026-11-06",
+      "teams": [
+        "Dallas Mavericks",
+        "Utah Jazz"
+      ],
+      "scores": [
+        112,
+        100
+      ],
+      "home": "Dallas Mavericks",
+      "winner": "Dallas Mavericks",
+      "cup": "group"
+    },
+    {
+      "id": "401909291",
+      "date": "2026-11-06",
+      "teams": [
+        "Memphis Grizzlies",
+        "Oklahoma City Thunder"
+      ],
+      "scores": [
+        97,
+        128
+      ],
+      "home": "Memphis Grizzlies",
+      "winner": "Oklahoma City Thunder",
+      "cup": "group"
+    },
+    {
+      "id": "401909292",
+      "date": "2026-11-06",
+      "teams": [
+        "Milwaukee Bucks",
+        "Toronto Raptors"
+      ],
+      "scores": [
+        107,
+        121
+      ],
+      "home": "Milwaukee Bucks",
+      "winner": "Toronto Raptors",
+      "cup": "group"
+    },
+    {
+      "id": "401909293",
+      "date": "2026-11-06",
+      "teams": [
+        "New Orleans Pelicans",
+        "Minnesota Timberwolves"
+      ],
+      "scores": [
+        109,
+        115
+      ],
+      "home": "New Orleans Pelicans",
+      "winner": "Minnesota Timberwolves",
+      "cup": "group"
+    },
+    {
+      "id": "401909294",
+      "date": "2026-11-06",
+      "teams": [
+        "Los Angeles Lakers",
+        "Portland Trail Blazers"
+      ],
+      "scores": [
+        124,
+        118
+      ],
+      "home": "Los Angeles Lakers",
+      "winner": "Los Angeles Lakers",
+      "cup": "group"
+    },
+    {
+      "id": "401909295",
+      "date": "2026-11-06",
+      "teams": [
+        "Sacramento Kings",
+        "San Antonio Spurs"
+      ],
+      "scores": [
+        109,
+        124
+      ],
+      "home": "Sacramento Kings",
+      "winner": "San Antonio Spurs",
+      "cup": "group"
     }
   ]
 }
