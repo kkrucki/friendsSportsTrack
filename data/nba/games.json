@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-06",
+  "throughDate": "2026-11-07",
   "games": [
     {
       "id": "401909088",
@@ -1875,6 +1875,105 @@
       "home": "Sacramento Kings",
       "winner": "San Antonio Spurs",
       "cup": "group"
+    },
+    {
+      "id": "401909938",
+      "date": "2026-11-07",
+      "teams": [
+        "Indiana Pacers",
+        "Denver Nuggets"
+      ],
+      "scores": [
+        102,
+        114
+      ],
+      "home": "Indiana Pacers",
+      "winner": "Denver Nuggets"
+    },
+    {
+      "id": "401909939",
+      "date": "2026-11-07",
+      "teams": [
+        "Atlanta Hawks",
+        "Brooklyn Nets"
+      ],
+      "scores": [
+        124,
+        121
+      ],
+      "home": "Atlanta Hawks",
+      "winner": "Atlanta Hawks"
+    },
+    {
+      "id": "401909940",
+      "date": "2026-11-07",
+      "teams": [
+        "Cleveland Cavaliers",
+        "New York Knicks"
+      ],
+      "scores": [
+        97,
+        109
+      ],
+      "home": "Cleveland Cavaliers",
+      "winner": "New York Knicks"
+    },
+    {
+      "id": "401909941",
+      "date": "2026-11-07",
+      "teams": [
+        "Oklahoma City Thunder",
+        "Washington Wizards"
+      ],
+      "scores": [
+        114,
+        75
+      ],
+      "home": "Oklahoma City Thunder",
+      "winner": "Oklahoma City Thunder"
+    },
+    {
+      "id": "401909942",
+      "date": "2026-11-07",
+      "teams": [
+        "Golden State Warriors",
+        "Orlando Magic"
+      ],
+      "scores": [
+        126,
+        119
+      ],
+      "home": "Golden State Warriors",
+      "winner": "Golden State Warriors",
+      "detail": "Final/OT"
+    },
+    {
+      "id": "401909943",
+      "date": "2026-11-07",
+      "teams": [
+        "Phoenix Suns",
+        "Houston Rockets"
+      ],
+      "scores": [
+        102,
+        99
+      ],
+      "home": "Phoenix Suns",
+      "winner": "Phoenix Suns"
+    },
+    {
+      "id": "401909944",
+      "date": "2026-11-07",
+      "teams": [
+        "Portland Trail Blazers",
+        "San Antonio Spurs"
+      ],
+      "scores": [
+        103,
+        125
+      ],
+      "home": "Portland Trail Blazers",
+      "winner": "San Antonio Spurs"
     }
   ]
 }
