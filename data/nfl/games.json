@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-07",
+  "throughDate": "2026-11-08",
   "games": [
     {
       "id": "401872656",
@@ -1841,6 +1841,202 @@
       ],
       "home": "Baltimore Ravens",
       "winner": "Jacksonville Jaguars",
+      "week": 9
+    },
+    {
+      "id": "401873038",
+      "date": "2026-11-08",
+      "teams": [
+        "Atlanta Falcons",
+        "Cincinnati Bengals"
+      ],
+      "scores": [
+        17,
+        34
+      ],
+      "home": "Atlanta Falcons",
+      "winner": "Cincinnati Bengals",
+      "week": 9
+    },
+    {
+      "id": "401873039",
+      "date": "2026-11-08",
+      "teams": [
+        "New Orleans Saints",
+        "Cleveland Browns"
+      ],
+      "scores": [
+        23,
+        22
+      ],
+      "home": "New Orleans Saints",
+      "winner": "New Orleans Saints",
+      "week": 9,
+      "detail": "Final/OT"
+    },
+    {
+      "id": "401873040",
+      "date": "2026-11-08",
+      "teams": [
+        "Indianapolis Colts",
+        "Dallas Cowboys"
+      ],
+      "scores": [
+        23,
+        27
+      ],
+      "home": "Indianapolis Colts",
+      "winner": "Dallas Cowboys",
+      "week": 9
+    },
+    {
+      "id": "401873041",
+      "date": "2026-11-08",
+      "teams": [
+        "Carolina Panthers",
+        "Denver Broncos"
+      ],
+      "scores": [
+        21,
+        26
+      ],
+      "home": "Carolina Panthers",
+      "winner": "Denver Broncos",
+      "week": 9
+    },
+    {
+      "id": "401873042",
+      "date": "2026-11-08",
+      "teams": [
+        "Miami Dolphins",
+        "Detroit Lions"
+      ],
+      "scores": [
+        9,
+        19
+      ],
+      "home": "Miami Dolphins",
+      "winner": "Detroit Lions",
+      "week": 9
+    },
+    {
+      "id": "401873043",
+      "date": "2026-11-08",
+      "teams": [
+        "Washington Commanders",
+        "Los Angeles Rams"
+      ],
+      "scores": [
+        13,
+        20
+      ],
+      "home": "Washington Commanders",
+      "winner": "Los Angeles Rams",
+      "week": 9
+    },
+    {
+      "id": "401873044",
+      "date": "2026-11-08",
+      "teams": [
+        "Philadelphia Eagles",
+        "New York Giants"
+      ],
+      "scores": [
+        11,
+        19
+      ],
+      "home": "Philadelphia Eagles",
+      "winner": "New York Giants",
+      "week": 9
+    },
+    {
+      "id": "401873045",
+      "date": "2026-11-08",
+      "teams": [
+        "Kansas City Chiefs",
+        "New York Jets"
+      ],
+      "scores": [
+        35,
+        12
+      ],
+      "home": "Kansas City Chiefs",
+      "winner": "Kansas City Chiefs",
+      "week": 9
+    },
+    {
+      "id": "401873046",
+      "date": "2026-11-08",
+      "teams": [
+        "Los Angeles Chargers",
+        "Houston Texans"
+      ],
+      "scores": [
+        22,
+        44
+      ],
+      "home": "Los Angeles Chargers",
+      "winner": "Houston Texans",
+      "week": 9
+    },
+    {
+      "id": "401873047",
+      "date": "2026-11-08",
+      "teams": [
+        "San Francisco 49ers",
+        "Las Vegas Raiders"
+      ],
+      "scores": [
+        38,
+        17
+      ],
+      "home": "San Francisco 49ers",
+      "winner": "San Francisco 49ers",
+      "week": 9
+    },
+    {
+      "id": "401873048",
+      "date": "2026-11-08",
+      "teams": [
+        "Seattle Seahawks",
+        "Arizona Cardinals"
+      ],
+      "scores": [
+        17,
+        3
+      ],
+      "home": "Seattle Seahawks",
+      "winner": "Seattle Seahawks",
+      "week": 9
+    },
+    {
+      "id": "401873049",
+      "date": "2026-11-08",
+      "teams": [
+        "New England Patriots",
+        "Green Bay Packers"
+      ],
+      "scores": [
+        27,
+        45
+      ],
+      "home": "New England Patriots",
+      "winner": "Green Bay Packers",
+      "week": 9
+    },
+    {
+      "id": "401873050",
+      "date": "2026-11-08",
+      "teams": [
+        "Chicago Bears",
+        "Tampa Bay Buccaneers"
+      ],
+      "scores": [
+        27,
+        24
+      ],
+      "home": "Chicago Bears",
+      "winner": "Chicago Bears",
       "week": 9
     }
   ]

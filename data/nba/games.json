@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-07",
+  "throughDate": "2026-11-08",
   "games": [
     {
       "id": "401909088",
@@ -1974,6 +1974,104 @@
       ],
       "home": "Portland Trail Blazers",
       "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909945",
+      "date": "2026-11-08",
+      "teams": [
+        "Chicago Bulls",
+        "Philadelphia 76ers"
+      ],
+      "scores": [
+        121,
+        127
+      ],
+      "home": "Chicago Bulls",
+      "winner": "Philadelphia 76ers"
+    },
+    {
+      "id": "401909946",
+      "date": "2026-11-08",
+      "teams": [
+        "Detroit Pistons",
+        "Los Angeles Lakers"
+      ],
+      "scores": [
+        116,
+        121
+      ],
+      "home": "Detroit Pistons",
+      "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909947",
+      "date": "2026-11-08",
+      "teams": [
+        "Minnesota Timberwolves",
+        "Utah Jazz"
+      ],
+      "scores": [
+        115,
+        100
+      ],
+      "home": "Minnesota Timberwolves",
+      "winner": "Minnesota Timberwolves"
+    },
+    {
+      "id": "401909948",
+      "date": "2026-11-08",
+      "teams": [
+        "Dallas Mavericks",
+        "Brooklyn Nets"
+      ],
+      "scores": [
+        130,
+        93
+      ],
+      "home": "Dallas Mavericks",
+      "winner": "Dallas Mavericks"
+    },
+    {
+      "id": "401909949",
+      "date": "2026-11-08",
+      "teams": [
+        "Milwaukee Bucks",
+        "Boston Celtics"
+      ],
+      "scores": [
+        97,
+        117
+      ],
+      "home": "Milwaukee Bucks",
+      "winner": "Boston Celtics"
+    },
+    {
+      "id": "401909950",
+      "date": "2026-11-08",
+      "teams": [
+        "LA Clippers",
+        "New Orleans Pelicans"
+      ],
+      "scores": [
+        139,
+        123
+      ],
+      "home": "LA Clippers",
+      "winner": "LA Clippers"
+    },
+    {
+      "id": "401909951",
+      "date": "2026-11-08",
+      "teams": [
+        "Sacramento Kings",
+        "Miami Heat"
+      ],
+      "scores": [
+        108,
+        114
+      ],
+      "home": "Sacramento Kings",
+      "winner": "Miami Heat"
     }
   ]
 }
