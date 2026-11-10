@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-08",
+  "throughDate": "2026-11-09",
   "games": [
     {
       "id": "401872656",
@@ -2037,6 +2037,21 @@
       ],
       "home": "Chicago Bears",
       "winner": "Chicago Bears",
+      "week": 9
+    },
+    {
+      "id": "401873051",
+      "date": "2026-11-09",
+      "teams": [
+        "Minnesota Vikings",
+        "Buffalo Bills"
+      ],
+      "scores": [
+        6,
+        23
+      ],
+      "home": "Minnesota Vikings",
+      "winner": "Buffalo Bills",
       "week": 9
     }
   ]

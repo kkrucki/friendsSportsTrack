@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-08",
+  "throughDate": "2026-11-09",
   "games": [
     {
       "id": "401909088",
@@ -2072,6 +2072,118 @@
       ],
       "home": "Sacramento Kings",
       "winner": "Miami Heat"
+    },
+    {
+      "id": "401909952",
+      "date": "2026-11-09",
+      "teams": [
+        "Atlanta Hawks",
+        "Los Angeles Lakers"
+      ],
+      "scores": [
+        114,
+        124
+      ],
+      "home": "Atlanta Hawks",
+      "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909953",
+      "date": "2026-11-09",
+      "teams": [
+        "Charlotte Hornets",
+        "Cleveland Cavaliers"
+      ],
+      "scores": [
+        124,
+        112
+      ],
+      "home": "Charlotte Hornets",
+      "winner": "Charlotte Hornets"
+    },
+    {
+      "id": "401909954",
+      "date": "2026-11-09",
+      "teams": [
+        "Detroit Pistons",
+        "Washington Wizards"
+      ],
+      "scores": [
+        122,
+        111
+      ],
+      "home": "Detroit Pistons",
+      "winner": "Detroit Pistons"
+    },
+    {
+      "id": "401909955",
+      "date": "2026-11-09",
+      "teams": [
+        "Toronto Raptors",
+        "Memphis Grizzlies"
+      ],
+      "scores": [
+        102,
+        118
+      ],
+      "home": "Toronto Raptors",
+      "winner": "Memphis Grizzlies"
+    },
+    {
+      "id": "401909956",
+      "date": "2026-11-09",
+      "teams": [
+        "Dallas Mavericks",
+        "Indiana Pacers"
+      ],
+      "scores": [
+        125,
+        122
+      ],
+      "home": "Dallas Mavericks",
+      "winner": "Dallas Mavericks"
+    },
+    {
+      "id": "401909957",
+      "date": "2026-11-09",
+      "teams": [
+        "Houston Rockets",
+        "Denver Nuggets"
+      ],
+      "scores": [
+        110,
+        100
+      ],
+      "home": "Houston Rockets",
+      "winner": "Houston Rockets"
+    },
+    {
+      "id": "401909958",
+      "date": "2026-11-09",
+      "teams": [
+        "Phoenix Suns",
+        "San Antonio Spurs"
+      ],
+      "scores": [
+        96,
+        122
+      ],
+      "home": "Phoenix Suns",
+      "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909959",
+      "date": "2026-11-09",
+      "teams": [
+        "Golden State Warriors",
+        "New Orleans Pelicans"
+      ],
+      "scores": [
+        138,
+        87
+      ],
+      "home": "Golden State Warriors",
+      "winner": "Golden State Warriors"
     }
   ]
 }
