@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-10",
+  "throughDate": "2026-11-11",
   "games": [
     {
       "id": "401909088",
@@ -2265,6 +2265,146 @@
       "scores": [
         123,
         103
+      ],
+      "home": "Portland Trail Blazers",
+      "winner": "Portland Trail Blazers"
+    },
+    {
+      "id": "401909966",
+      "date": "2026-11-11",
+      "teams": [
+        "Indiana Pacers",
+        "Washington Wizards"
+      ],
+      "scores": [
+        114,
+        101
+      ],
+      "home": "Indiana Pacers",
+      "winner": "Indiana Pacers"
+    },
+    {
+      "id": "401909967",
+      "date": "2026-11-11",
+      "teams": [
+        "New York Knicks",
+        "Cleveland Cavaliers"
+      ],
+      "scores": [
+        107,
+        115
+      ],
+      "home": "New York Knicks",
+      "winner": "Cleveland Cavaliers"
+    },
+    {
+      "id": "401909968",
+      "date": "2026-11-11",
+      "teams": [
+        "Toronto Raptors",
+        "Boston Celtics"
+      ],
+      "scores": [
+        93,
+        98
+      ],
+      "home": "Toronto Raptors",
+      "winner": "Boston Celtics"
+    },
+    {
+      "id": "401909969",
+      "date": "2026-11-11",
+      "teams": [
+        "Chicago Bulls",
+        "San Antonio Spurs"
+      ],
+      "scores": [
+        119,
+        124
+      ],
+      "home": "Chicago Bulls",
+      "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909970",
+      "date": "2026-11-11",
+      "teams": [
+        "Memphis Grizzlies",
+        "Denver Nuggets"
+      ],
+      "scores": [
+        118,
+        123
+      ],
+      "home": "Memphis Grizzlies",
+      "winner": "Denver Nuggets"
+    },
+    {
+      "id": "401909971",
+      "date": "2026-11-11",
+      "teams": [
+        "Milwaukee Bucks",
+        "Los Angeles Lakers"
+      ],
+      "scores": [
+        112,
+        123
+      ],
+      "home": "Milwaukee Bucks",
+      "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909972",
+      "date": "2026-11-11",
+      "teams": [
+        "New Orleans Pelicans",
+        "Brooklyn Nets"
+      ],
+      "scores": [
+        111,
+        145
+      ],
+      "home": "New Orleans Pelicans",
+      "winner": "Brooklyn Nets"
+    },
+    {
+      "id": "401909973",
+      "date": "2026-11-11",
+      "teams": [
+        "Utah Jazz",
+        "Orlando Magic"
+      ],
+      "scores": [
+        108,
+        123
+      ],
+      "home": "Utah Jazz",
+      "winner": "Orlando Magic"
+    },
+    {
+      "id": "401909974",
+      "date": "2026-11-11",
+      "teams": [
+        "Houston Rockets",
+        "Golden State Warriors"
+      ],
+      "scores": [
+        115,
+        108
+      ],
+      "home": "Houston Rockets",
+      "winner": "Houston Rockets"
+    },
+    {
+      "id": "401909975",
+      "date": "2026-11-11",
+      "teams": [
+        "Portland Trail Blazers",
+        "Oklahoma City Thunder"
+      ],
+      "scores": [
+        118,
+        108
       ],
       "home": "Portland Trail Blazers",
       "winner": "Portland Trail Blazers"
