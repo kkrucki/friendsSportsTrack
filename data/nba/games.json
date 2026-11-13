@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-11",
+  "throughDate": "2026-11-12",
   "games": [
     {
       "id": "401909088",
@@ -2408,6 +2408,63 @@
       ],
       "home": "Portland Trail Blazers",
       "winner": "Portland Trail Blazers"
+    },
+    {
+      "id": "401909976",
+      "date": "2026-11-12",
+      "teams": [
+        "Philadelphia 76ers",
+        "Toronto Raptors"
+      ],
+      "scores": [
+        123,
+        112
+      ],
+      "home": "Philadelphia 76ers",
+      "winner": "Philadelphia 76ers"
+    },
+    {
+      "id": "401909977",
+      "date": "2026-11-12",
+      "teams": [
+        "Washington Wizards",
+        "Detroit Pistons"
+      ],
+      "scores": [
+        140,
+        144
+      ],
+      "home": "Washington Wizards",
+      "winner": "Detroit Pistons",
+      "detail": "Final/2OT"
+    },
+    {
+      "id": "401909978",
+      "date": "2026-11-12",
+      "teams": [
+        "Minnesota Timberwolves",
+        "Dallas Mavericks"
+      ],
+      "scores": [
+        133,
+        94
+      ],
+      "home": "Minnesota Timberwolves",
+      "winner": "Minnesota Timberwolves"
+    },
+    {
+      "id": "401909979",
+      "date": "2026-11-12",
+      "teams": [
+        "Phoenix Suns",
+        "Charlotte Hornets"
+      ],
+      "scores": [
+        101,
+        96
+      ],
+      "home": "Phoenix Suns",
+      "winner": "Phoenix Suns"
     }
   ]
 }

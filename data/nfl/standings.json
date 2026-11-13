@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "updatedAt": "2026-11-12T17:42:31.781Z",
+  "updatedAt": "2026-11-13T17:20:48.221Z",
   "teams": {
     "Buffalo Bills": {
       "abbr": "BUF",
@@ -175,7 +175,7 @@
       "short": "Giants",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
       "wins": 5,
-      "losses": 2,
+      "losses": 3,
       "ties": 1
     },
     "Seattle Seahawks": {
@@ -218,6 +218,14 @@
       "losses": 5,
       "ties": 0
     },
+    "Washington Commanders": {
+      "abbr": "WSH",
+      "short": "Commanders",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
+      "wins": 3,
+      "losses": 5,
+      "ties": 1
+    },
     "Tampa Bay Buccaneers": {
       "abbr": "TB",
       "short": "Buccaneers",
@@ -241,14 +249,6 @@
       "wins": 3,
       "losses": 6,
       "ties": 0
-    },
-    "Washington Commanders": {
-      "abbr": "WSH",
-      "short": "Commanders",
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/wsh.png",
-      "wins": 2,
-      "losses": 5,
-      "ties": 1
     },
     "Philadelphia Eagles": {
       "abbr": "PHI",

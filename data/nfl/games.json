@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-11",
+  "throughDate": "2026-11-12",
   "games": [
     {
       "id": "401872656",
@@ -2053,6 +2053,21 @@
       "home": "Minnesota Vikings",
       "winner": "Buffalo Bills",
       "week": 9
+    },
+    {
+      "id": "401873052",
+      "date": "2026-11-12",
+      "teams": [
+        "New York Giants",
+        "Washington Commanders"
+      ],
+      "scores": [
+        21,
+        24
+      ],
+      "home": "New York Giants",
+      "winner": "Washington Commanders",
+      "week": 10
     }
   ]
 }
