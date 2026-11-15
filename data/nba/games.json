@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-13",
+  "throughDate": "2026-11-14",
   "games": [
     {
       "id": "401909088",
@@ -2601,6 +2601,76 @@
       "home": "LA Clippers",
       "winner": "LA Clippers",
       "cup": "group"
+    },
+    {
+      "id": "401909980",
+      "date": "2026-11-14",
+      "teams": [
+        "New Orleans Pelicans",
+        "Denver Nuggets"
+      ],
+      "scores": [
+        108,
+        116
+      ],
+      "home": "New Orleans Pelicans",
+      "winner": "Denver Nuggets"
+    },
+    {
+      "id": "401909981",
+      "date": "2026-11-14",
+      "teams": [
+        "Cleveland Cavaliers",
+        "Dallas Mavericks"
+      ],
+      "scores": [
+        127,
+        117
+      ],
+      "home": "Cleveland Cavaliers",
+      "winner": "Cleveland Cavaliers"
+    },
+    {
+      "id": "401909982",
+      "date": "2026-11-14",
+      "teams": [
+        "Miami Heat",
+        "Detroit Pistons"
+      ],
+      "scores": [
+        137,
+        117
+      ],
+      "home": "Miami Heat",
+      "winner": "Miami Heat"
+    },
+    {
+      "id": "401909983",
+      "date": "2026-11-14",
+      "teams": [
+        "Memphis Grizzlies",
+        "Brooklyn Nets"
+      ],
+      "scores": [
+        129,
+        110
+      ],
+      "home": "Memphis Grizzlies",
+      "winner": "Memphis Grizzlies"
+    },
+    {
+      "id": "401909984",
+      "date": "2026-11-14",
+      "teams": [
+        "Minnesota Timberwolves",
+        "Chicago Bulls"
+      ],
+      "scores": [
+        106,
+        117
+      ],
+      "home": "Minnesota Timberwolves",
+      "winner": "Chicago Bulls"
     }
   ]
 }
