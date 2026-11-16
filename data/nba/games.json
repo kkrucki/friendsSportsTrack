@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-14",
+  "throughDate": "2026-11-15",
   "games": [
     {
       "id": "401909088",
@@ -2671,6 +2671,133 @@
       ],
       "home": "Minnesota Timberwolves",
       "winner": "Chicago Bulls"
+    },
+    {
+      "id": "401909985",
+      "date": "2026-11-15",
+      "teams": [
+        "Philadelphia 76ers",
+        "Indiana Pacers"
+      ],
+      "scores": [
+        131,
+        124
+      ],
+      "home": "Philadelphia 76ers",
+      "winner": "Philadelphia 76ers"
+    },
+    {
+      "id": "401909986",
+      "date": "2026-11-15",
+      "teams": [
+        "Phoenix Suns",
+        "Los Angeles Lakers"
+      ],
+      "scores": [
+        123,
+        131
+      ],
+      "home": "Phoenix Suns",
+      "winner": "Los Angeles Lakers"
+    },
+    {
+      "id": "401909987",
+      "date": "2026-11-15",
+      "teams": [
+        "LA Clippers",
+        "Charlotte Hornets"
+      ],
+      "scores": [
+        113,
+        105
+      ],
+      "home": "LA Clippers",
+      "winner": "LA Clippers"
+    },
+    {
+      "id": "401909988",
+      "date": "2026-11-15",
+      "teams": [
+        "Utah Jazz",
+        "San Antonio Spurs"
+      ],
+      "scores": [
+        102,
+        110
+      ],
+      "home": "Utah Jazz",
+      "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909989",
+      "date": "2026-11-15",
+      "teams": [
+        "Boston Celtics",
+        "Dallas Mavericks"
+      ],
+      "scores": [
+        131,
+        94
+      ],
+      "home": "Boston Celtics",
+      "winner": "Boston Celtics"
+    },
+    {
+      "id": "401909990",
+      "date": "2026-11-15",
+      "teams": [
+        "Toronto Raptors",
+        "New York Knicks"
+      ],
+      "scores": [
+        108,
+        112
+      ],
+      "home": "Toronto Raptors",
+      "winner": "New York Knicks",
+      "detail": "Final/OT"
+    },
+    {
+      "id": "401909991",
+      "date": "2026-11-15",
+      "teams": [
+        "Washington Wizards",
+        "Houston Rockets"
+      ],
+      "scores": [
+        119,
+        147
+      ],
+      "home": "Washington Wizards",
+      "winner": "Houston Rockets"
+    },
+    {
+      "id": "401909992",
+      "date": "2026-11-15",
+      "teams": [
+        "Milwaukee Bucks",
+        "Atlanta Hawks"
+      ],
+      "scores": [
+        106,
+        113
+      ],
+      "home": "Milwaukee Bucks",
+      "winner": "Atlanta Hawks"
+    },
+    {
+      "id": "401909993",
+      "date": "2026-11-15",
+      "teams": [
+        "Sacramento Kings",
+        "Oklahoma City Thunder"
+      ],
+      "scores": [
+        103,
+        125
+      ],
+      "home": "Sacramento Kings",
+      "winner": "Oklahoma City Thunder"
     }
   ]
 }

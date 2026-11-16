@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-14",
+  "throughDate": "2026-11-15",
   "games": [
     {
       "id": "401872656",
@@ -2067,6 +2067,186 @@
       ],
       "home": "New York Giants",
       "winner": "Washington Commanders",
+      "week": 10
+    },
+    {
+      "id": "401873053",
+      "date": "2026-11-15",
+      "teams": [
+        "Detroit Lions",
+        "New England Patriots"
+      ],
+      "scores": [
+        35,
+        10
+      ],
+      "home": "Detroit Lions",
+      "winner": "Detroit Lions",
+      "week": 10
+    },
+    {
+      "id": "401873054",
+      "date": "2026-11-15",
+      "teams": [
+        "New York Jets",
+        "Buffalo Bills"
+      ],
+      "scores": [
+        12,
+        31
+      ],
+      "home": "New York Jets",
+      "winner": "Buffalo Bills",
+      "week": 10
+    },
+    {
+      "id": "401873055",
+      "date": "2026-11-15",
+      "teams": [
+        "New Orleans Saints",
+        "Carolina Panthers"
+      ],
+      "scores": [
+        17,
+        20
+      ],
+      "home": "New Orleans Saints",
+      "winner": "Carolina Panthers",
+      "week": 10
+    },
+    {
+      "id": "401873056",
+      "date": "2026-11-15",
+      "teams": [
+        "Cleveland Browns",
+        "Houston Texans"
+      ],
+      "scores": [
+        27,
+        24
+      ],
+      "home": "Cleveland Browns",
+      "winner": "Cleveland Browns",
+      "week": 10
+    },
+    {
+      "id": "401873057",
+      "date": "2026-11-15",
+      "teams": [
+        "Tennessee Titans",
+        "Jacksonville Jaguars"
+      ],
+      "scores": [
+        23,
+        40
+      ],
+      "home": "Tennessee Titans",
+      "winner": "Jacksonville Jaguars",
+      "week": 10
+    },
+    {
+      "id": "401873058",
+      "date": "2026-11-15",
+      "teams": [
+        "Atlanta Falcons",
+        "Kansas City Chiefs"
+      ],
+      "scores": [
+        13,
+        35
+      ],
+      "home": "Atlanta Falcons",
+      "winner": "Kansas City Chiefs",
+      "week": 10
+    },
+    {
+      "id": "401873059",
+      "date": "2026-11-15",
+      "teams": [
+        "Indianapolis Colts",
+        "Miami Dolphins"
+      ],
+      "scores": [
+        24,
+        22
+      ],
+      "home": "Indianapolis Colts",
+      "winner": "Indianapolis Colts",
+      "week": 10
+    },
+    {
+      "id": "401873060",
+      "date": "2026-11-15",
+      "teams": [
+        "Green Bay Packers",
+        "Minnesota Vikings"
+      ],
+      "scores": [
+        10,
+        30
+      ],
+      "home": "Green Bay Packers",
+      "winner": "Minnesota Vikings",
+      "week": 10
+    },
+    {
+      "id": "401873061",
+      "date": "2026-11-15",
+      "teams": [
+        "Arizona Cardinals",
+        "Los Angeles Rams"
+      ],
+      "scores": [
+        6,
+        34
+      ],
+      "home": "Arizona Cardinals",
+      "winner": "Los Angeles Rams",
+      "week": 10
+    },
+    {
+      "id": "401873062",
+      "date": "2026-11-15",
+      "teams": [
+        "Las Vegas Raiders",
+        "Seattle Seahawks"
+      ],
+      "scores": [
+        13,
+        21
+      ],
+      "home": "Las Vegas Raiders",
+      "winner": "Seattle Seahawks",
+      "week": 10
+    },
+    {
+      "id": "401873063",
+      "date": "2026-11-15",
+      "teams": [
+        "Dallas Cowboys",
+        "San Francisco 49ers"
+      ],
+      "scores": [
+        40,
+        46
+      ],
+      "home": "Dallas Cowboys",
+      "winner": "San Francisco 49ers",
+      "week": 10
+    },
+    {
+      "id": "401873064",
+      "date": "2026-11-15",
+      "teams": [
+        "Cincinnati Bengals",
+        "Pittsburgh Steelers"
+      ],
+      "scores": [
+        38,
+        18
+      ],
+      "home": "Cincinnati Bengals",
+      "winner": "Cincinnati Bengals",
       "week": 10
     }
   ]
