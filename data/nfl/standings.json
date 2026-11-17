@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "updatedAt": "2026-11-16T19:47:22.163Z",
+  "updatedAt": "2026-11-17T18:43:39.996Z",
   "teams": {
     "Buffalo Bills": {
       "abbr": "BUF",
@@ -66,18 +66,18 @@
       "losses": 5,
       "ties": 0
     },
-    "Baltimore Ravens": {
-      "abbr": "BAL",
-      "short": "Ravens",
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
-      "wins": 4,
-      "losses": 5,
-      "ties": 0
-    },
     "Las Vegas Raiders": {
       "abbr": "LV",
       "short": "Raiders",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
+    "Baltimore Ravens": {
+      "abbr": "BAL",
+      "short": "Ravens",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
       "wins": 4,
       "losses": 6,
       "ties": 0
@@ -106,6 +106,14 @@
       "losses": 8,
       "ties": 0
     },
+    "Los Angeles Chargers": {
+      "abbr": "LAC",
+      "short": "Chargers",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+      "wins": 1,
+      "losses": 8,
+      "ties": 0
+    },
     "Miami Dolphins": {
       "abbr": "MIA",
       "short": "Dolphins",
@@ -119,14 +127,6 @@
       "short": "Titans",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
       "wins": 1,
-      "losses": 8,
-      "ties": 0
-    },
-    "Los Angeles Chargers": {
-      "abbr": "LAC",
-      "short": "Chargers",
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
-      "wins": 0,
       "losses": 8,
       "ties": 0
     },
