@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "updatedAt": "2026-11-19T18:35:10.068Z",
+  "updatedAt": "2026-11-20T17:57:55.403Z",
   "teams": {
     "Buffalo Bills": {
       "abbr": "BUF",
@@ -66,6 +66,14 @@
       "losses": 5,
       "ties": 0
     },
+    "Houston Texans": {
+      "abbr": "HOU",
+      "short": "Texans",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
+      "wins": 4,
+      "losses": 6,
+      "ties": 0
+    },
     "Las Vegas Raiders": {
       "abbr": "LV",
       "short": "Raiders",
@@ -82,20 +90,12 @@
       "losses": 6,
       "ties": 0
     },
-    "Houston Texans": {
-      "abbr": "HOU",
-      "short": "Texans",
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
-      "wins": 3,
-      "losses": 6,
-      "ties": 0
-    },
     "Indianapolis Colts": {
       "abbr": "IND",
       "short": "Colts",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
       "wins": 3,
-      "losses": 7,
+      "losses": 8,
       "ties": 0
     },
     "New York Jets": {

@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-18",
+  "throughDate": "2026-11-19",
   "games": [
     {
       "id": "401909088",
@@ -3149,6 +3149,62 @@
       ],
       "home": "Sacramento Kings",
       "winner": "Phoenix Suns"
+    },
+    {
+      "id": "401910019",
+      "date": "2026-11-19",
+      "teams": [
+        "Memphis Grizzlies",
+        "Golden State Warriors"
+      ],
+      "scores": [
+        126,
+        98
+      ],
+      "home": "Memphis Grizzlies",
+      "winner": "Memphis Grizzlies"
+    },
+    {
+      "id": "401910020",
+      "date": "2026-11-19",
+      "teams": [
+        "Milwaukee Bucks",
+        "Portland Trail Blazers"
+      ],
+      "scores": [
+        114,
+        124
+      ],
+      "home": "Milwaukee Bucks",
+      "winner": "Portland Trail Blazers"
+    },
+    {
+      "id": "401910021",
+      "date": "2026-11-19",
+      "teams": [
+        "Minnesota Timberwolves",
+        "New York Knicks"
+      ],
+      "scores": [
+        99,
+        102
+      ],
+      "home": "Minnesota Timberwolves",
+      "winner": "New York Knicks"
+    },
+    {
+      "id": "401910022",
+      "date": "2026-11-19",
+      "teams": [
+        "San Antonio Spurs",
+        "LA Clippers"
+      ],
+      "scores": [
+        124,
+        112
+      ],
+      "home": "San Antonio Spurs",
+      "winner": "San Antonio Spurs"
     }
   ]
 }

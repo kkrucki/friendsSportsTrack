@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-18",
+  "throughDate": "2026-11-19",
   "games": [
     {
       "id": "401872656",
@@ -2263,6 +2263,21 @@
       "home": "Baltimore Ravens",
       "winner": "Los Angeles Chargers",
       "week": 10
+    },
+    {
+      "id": "401873066",
+      "date": "2026-11-19",
+      "teams": [
+        "Houston Texans",
+        "Indianapolis Colts"
+      ],
+      "scores": [
+        26,
+        3
+      ],
+      "home": "Houston Texans",
+      "winner": "Houston Texans",
+      "week": 11
     }
   ]
 }
