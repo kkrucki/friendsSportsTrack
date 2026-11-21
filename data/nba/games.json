@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-19",
+  "throughDate": "2026-11-20",
   "games": [
     {
       "id": "401909088",
@@ -3205,6 +3205,141 @@
       ],
       "home": "San Antonio Spurs",
       "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909305",
+      "date": "2026-11-20",
+      "teams": [
+        "Atlanta Hawks",
+        "Charlotte Hornets"
+      ],
+      "scores": [
+        111,
+        97
+      ],
+      "home": "Atlanta Hawks",
+      "winner": "Atlanta Hawks",
+      "cup": "group"
+    },
+    {
+      "id": "401909306",
+      "date": "2026-11-20",
+      "teams": [
+        "Brooklyn Nets",
+        "Orlando Magic"
+      ],
+      "scores": [
+        111,
+        113
+      ],
+      "home": "Brooklyn Nets",
+      "winner": "Orlando Magic",
+      "cup": "group"
+    },
+    {
+      "id": "401909307",
+      "date": "2026-11-20",
+      "teams": [
+        "Cleveland Cavaliers",
+        "Indiana Pacers"
+      ],
+      "scores": [
+        128,
+        119
+      ],
+      "home": "Cleveland Cavaliers",
+      "winner": "Cleveland Cavaliers",
+      "cup": "group"
+    },
+    {
+      "id": "401909308",
+      "date": "2026-11-20",
+      "teams": [
+        "Detroit Pistons",
+        "Toronto Raptors"
+      ],
+      "scores": [
+        102,
+        105
+      ],
+      "home": "Detroit Pistons",
+      "winner": "Toronto Raptors",
+      "cup": "group"
+    },
+    {
+      "id": "401909309",
+      "date": "2026-11-20",
+      "teams": [
+        "Chicago Bulls",
+        "Washington Wizards"
+      ],
+      "scores": [
+        94,
+        98
+      ],
+      "home": "Chicago Bulls",
+      "winner": "Washington Wizards",
+      "cup": "group"
+    },
+    {
+      "id": "401909310",
+      "date": "2026-11-20",
+      "teams": [
+        "Oklahoma City Thunder",
+        "New Orleans Pelicans"
+      ],
+      "scores": [
+        126,
+        120
+      ],
+      "home": "Oklahoma City Thunder",
+      "winner": "Oklahoma City Thunder",
+      "cup": "group"
+    },
+    {
+      "id": "401909311",
+      "date": "2026-11-20",
+      "teams": [
+        "Utah Jazz",
+        "Phoenix Suns"
+      ],
+      "scores": [
+        101,
+        111
+      ],
+      "home": "Utah Jazz",
+      "winner": "Phoenix Suns",
+      "cup": "group"
+    },
+    {
+      "id": "401909312",
+      "date": "2026-11-20",
+      "teams": [
+        "Denver Nuggets",
+        "Houston Rockets"
+      ],
+      "scores": [
+        133,
+        124
+      ],
+      "home": "Denver Nuggets",
+      "winner": "Denver Nuggets",
+      "cup": "group"
+    },
+    {
+      "id": "401909313",
+      "date": "2026-11-20",
+      "teams": [
+        "Los Angeles Lakers",
+        "Sacramento Kings"
+      ],
+      "scores": [
+        106,
+        104
+      ],
+      "home": "Los Angeles Lakers",
+      "winner": "Los Angeles Lakers",
+      "cup": "group"
     }
   ]
 }
