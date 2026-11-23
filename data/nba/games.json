@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-21",
+  "throughDate": "2026-11-22",
   "games": [
     {
       "id": "401909088",
@@ -3424,6 +3424,105 @@
       ],
       "home": "Sacramento Kings",
       "winner": "Sacramento Kings"
+    },
+    {
+      "id": "401910029",
+      "date": "2026-11-22",
+      "teams": [
+        "Atlanta Hawks",
+        "Detroit Pistons"
+      ],
+      "scores": [
+        107,
+        97
+      ],
+      "home": "Atlanta Hawks",
+      "winner": "Atlanta Hawks"
+    },
+    {
+      "id": "401910030",
+      "date": "2026-11-22",
+      "teams": [
+        "Miami Heat",
+        "Oklahoma City Thunder"
+      ],
+      "scores": [
+        123,
+        113
+      ],
+      "home": "Miami Heat",
+      "winner": "Miami Heat"
+    },
+    {
+      "id": "401910031",
+      "date": "2026-11-22",
+      "teams": [
+        "Washington Wizards",
+        "Orlando Magic"
+      ],
+      "scores": [
+        116,
+        96
+      ],
+      "home": "Washington Wizards",
+      "winner": "Washington Wizards"
+    },
+    {
+      "id": "401910032",
+      "date": "2026-11-22",
+      "teams": [
+        "Chicago Bulls",
+        "Denver Nuggets"
+      ],
+      "scores": [
+        145,
+        151
+      ],
+      "home": "Chicago Bulls",
+      "winner": "Denver Nuggets",
+      "detail": "Final/OT"
+    },
+    {
+      "id": "401910033",
+      "date": "2026-11-22",
+      "teams": [
+        "Utah Jazz",
+        "Dallas Mavericks"
+      ],
+      "scores": [
+        114,
+        116
+      ],
+      "home": "Utah Jazz",
+      "winner": "Dallas Mavericks"
+    },
+    {
+      "id": "401910034",
+      "date": "2026-11-22",
+      "teams": [
+        "New York Knicks",
+        "Indiana Pacers"
+      ],
+      "scores": [
+        113,
+        106
+      ],
+      "home": "New York Knicks",
+      "winner": "New York Knicks"
+    },
+    {
+      "id": "401910035",
+      "date": "2026-11-22",
+      "teams": [
+        "Golden State Warriors",
+        "Boston Celtics"
+      ],
+      "scores": [
+        88,
+        87
+      ],
+      "home": "Golden State Warriors",
+      "winner": "Golden State Warriors"
     }
   ]
 }
