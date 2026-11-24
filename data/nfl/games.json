@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-22",
+  "throughDate": "2026-11-23",
   "games": [
     {
       "id": "401872656",
@@ -2442,6 +2442,21 @@
       ],
       "home": "San Francisco 49ers",
       "winner": "San Francisco 49ers",
+      "week": 11
+    },
+    {
+      "id": "401873078",
+      "date": "2026-11-23",
+      "teams": [
+        "Washington Commanders",
+        "Cincinnati Bengals"
+      ],
+      "scores": [
+        22,
+        20
+      ],
+      "home": "Washington Commanders",
+      "winner": "Washington Commanders",
       "week": 11
     }
   ]
