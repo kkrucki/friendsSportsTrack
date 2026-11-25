@@ -1,6 +1,6 @@
 {
   "season": "2026-27",
-  "throughDate": "2026-11-23",
+  "throughDate": "2026-11-24",
   "games": [
     {
       "id": "401909088",
@@ -3664,6 +3664,51 @@
       ],
       "home": "Sacramento Kings",
       "winner": "San Antonio Spurs"
+    },
+    {
+      "id": "401909314",
+      "date": "2026-11-24",
+      "teams": [
+        "Orlando Magic",
+        "Detroit Pistons"
+      ],
+      "scores": [
+        86,
+        104
+      ],
+      "home": "Orlando Magic",
+      "winner": "Detroit Pistons",
+      "cup": "group"
+    },
+    {
+      "id": "401909315",
+      "date": "2026-11-24",
+      "teams": [
+        "Washington Wizards",
+        "Boston Celtics"
+      ],
+      "scores": [
+        116,
+        131
+      ],
+      "home": "Washington Wizards",
+      "winner": "Boston Celtics",
+      "cup": "group"
+    },
+    {
+      "id": "401909316",
+      "date": "2026-11-24",
+      "teams": [
+        "Denver Nuggets",
+        "Dallas Mavericks"
+      ],
+      "scores": [
+        101,
+        120
+      ],
+      "home": "Denver Nuggets",
+      "winner": "Dallas Mavericks",
+      "cup": "group"
     }
   ]
 }
