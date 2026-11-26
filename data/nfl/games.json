@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-24",
+  "throughDate": "2026-11-25",
   "games": [
     {
       "id": "401872656",
@@ -2458,6 +2458,21 @@
       "home": "Washington Commanders",
       "winner": "Washington Commanders",
       "week": 11
+    },
+    {
+      "id": "401873079",
+      "date": "2026-11-25",
+      "teams": [
+        "Los Angeles Rams",
+        "Green Bay Packers"
+      ],
+      "scores": [
+        26,
+        13
+      ],
+      "home": "Los Angeles Rams",
+      "winner": "Los Angeles Rams",
+      "week": 12
     }
   ]
 }
