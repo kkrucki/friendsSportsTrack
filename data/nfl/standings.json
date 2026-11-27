@@ -1,12 +1,12 @@
 {
   "season": "2026",
-  "updatedAt": "2026-11-26T19:14:32.956Z",
+  "updatedAt": "2026-11-27T19:08:42.758Z",
   "teams": {
     "Buffalo Bills": {
       "abbr": "BUF",
       "short": "Bills",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
-      "wins": 9,
+      "wins": 10,
       "losses": 1,
       "ties": 0
     },
@@ -23,7 +23,7 @@
       "short": "Chiefs",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
       "wins": 8,
-      "losses": 2,
+      "losses": 3,
       "ties": 0
     },
     "Jacksonville Jaguars": {
@@ -138,20 +138,20 @@
       "losses": 1,
       "ties": 0
     },
+    "Chicago Bears": {
+      "abbr": "CHI",
+      "short": "Bears",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+      "wins": 9,
+      "losses": 2,
+      "ties": 0
+    },
     "Detroit Lions": {
       "abbr": "DET",
       "short": "Lions",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
       "wins": 8,
-      "losses": 2,
-      "ties": 0
-    },
-    "Chicago Bears": {
-      "abbr": "CHI",
-      "short": "Bears",
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
-      "wins": 8,
-      "losses": 2,
+      "losses": 3,
       "ties": 0
     },
     "Minnesota Vikings": {
@@ -202,14 +202,6 @@
       "losses": 5,
       "ties": 0
     },
-    "Dallas Cowboys": {
-      "abbr": "DAL",
-      "short": "Cowboys",
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
-      "wins": 5,
-      "losses": 6,
-      "ties": 0
-    },
     "Washington Commanders": {
       "abbr": "WSH",
       "short": "Commanders",
@@ -217,6 +209,22 @@
       "wins": 4,
       "losses": 5,
       "ties": 1
+    },
+    "Dallas Cowboys": {
+      "abbr": "DAL",
+      "short": "Cowboys",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+      "wins": 5,
+      "losses": 7,
+      "ties": 0
+    },
+    "Philadelphia Eagles": {
+      "abbr": "PHI",
+      "short": "Eagles",
+      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+      "wins": 4,
+      "losses": 7,
+      "ties": 0
     },
     "Tampa Bay Buccaneers": {
       "abbr": "TB",
@@ -238,14 +246,6 @@
       "abbr": "NO",
       "short": "Saints",
       "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
-      "wins": 3,
-      "losses": 7,
-      "ties": 0
-    },
-    "Philadelphia Eagles": {
-      "abbr": "PHI",
-      "short": "Eagles",
-      "logo": "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
       "wins": 3,
       "losses": 7,
       "ties": 0

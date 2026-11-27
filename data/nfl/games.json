@@ -1,6 +1,6 @@
 {
   "season": "2026",
-  "throughDate": "2026-11-25",
+  "throughDate": "2026-11-26",
   "games": [
     {
       "id": "401872656",
@@ -2472,6 +2472,51 @@
       ],
       "home": "Los Angeles Rams",
       "winner": "Los Angeles Rams",
+      "week": 12
+    },
+    {
+      "id": "401873080",
+      "date": "2026-11-26",
+      "teams": [
+        "Dallas Cowboys",
+        "Philadelphia Eagles"
+      ],
+      "scores": [
+        38,
+        39
+      ],
+      "home": "Dallas Cowboys",
+      "winner": "Philadelphia Eagles",
+      "week": 12
+    },
+    {
+      "id": "401873081",
+      "date": "2026-11-26",
+      "teams": [
+        "Detroit Lions",
+        "Chicago Bears"
+      ],
+      "scores": [
+        35,
+        39
+      ],
+      "home": "Detroit Lions",
+      "winner": "Chicago Bears",
+      "week": 12
+    },
+    {
+      "id": "401873082",
+      "date": "2026-11-26",
+      "teams": [
+        "Buffalo Bills",
+        "Kansas City Chiefs"
+      ],
+      "scores": [
+        13,
+        10
+      ],
+      "home": "Buffalo Bills",
+      "winner": "Buffalo Bills",
       "week": 12
     }
   ]
